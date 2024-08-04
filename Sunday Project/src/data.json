@@ -1,0 +1,32 @@
+{
+  "Student": [
+    {
+      "id": "1",
+      "name": "Rajan",
+      "age": "20",
+      "email": "kraja92946@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "7004",
+      "name": "vikash kumar",
+      "age": "20",
+      "email": "krajan92946@gmail.com",
+      "password": "r1244"
+    },
+    {
+      "id": "8be6",
+      "name": "suraj kr",
+      "age": "20",
+      "email": "suraj555@gmail.com",
+      "password": "s1234"
+    },
+    {
+      "id": "bee5",
+      "name": "Karan kumar",
+      "age": "19",
+      "email": "karan@gmail.com",
+      "password": "k1234"
+    }
+  ]
+}

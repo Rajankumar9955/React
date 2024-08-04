@@ -1,0 +1,47 @@
+{
+  "student": [
+    {
+      "id": "639a",
+      "emp_id": 120,
+      "name": "Rajan",
+      "degignation": "sr engineer",
+      "department": "cse",
+      "basic_salary": 120222
+    },
+    {
+      "id": "5dce",
+      "emp_id": 121,
+      "name": "Raj",
+      "degignation": "jr engineer",
+      "department": "it",
+      "basic_salary": 25000
+    },
+    {
+      "id": "2771",
+      "emp_id": "10",
+      "name": "Hariom kumar",
+      "degignation": "dawdare",
+      "department": "ar",
+      "basic_salary": "aearf"
+    },
+    {
+      "id": "6ae4",
+      "name": "Suraj kumar",
+      "emp_id": "10",
+      "degignation": "dawdare",
+      "department": "ar",
+      "basic_salary": "aearf"
+    },
+    {
+      "id": "9df1",
+      "emp_id": "10",
+      "name": "vikash kumar",
+      "degignation": "sdkhln",
+      "department": "asdnl",
+      "basic_salary": "aearf"
+    },
+    {
+      "id": "71d2"
+    }
+  ]
+}

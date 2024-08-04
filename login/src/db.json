@@ -1,0 +1,49 @@
+{
+  "register": [
+    {
+      "id": "1",
+      "name": "Rajan",
+      "email": "krajan92946@gmail.com",
+      "userid": "Rajan",
+      "password": "Raj12345"
+    },
+    {
+      "id": "0d76",
+      "name": "Rajan kumar",
+      "email": "hk328368@gmail.com",
+      "userid": "Rajan",
+      "password": "Rajan12345"
+    },
+    {
+      "id": "7a50",
+      "name": "suraj",
+      "email": "suraj555@gmail.com",
+      "userid": "suraj",
+      "password": "suraj1234"
+    },
+    {
+      "id": "6aea",
+      "name": "suraj",
+      "email": "suraj555@gmail.com",
+      "userid": "suraj",
+      "password": "suraj1234"
+    },
+    {
+      "id": "8021",
+      "name": "Karan chaudhary",
+      "email": "kraran92945@gmail.com",
+      "userid": "Karan@01",
+      "password": "k1234"
+    },
+    {
+      "id": "ed72"
+    },
+    {
+      "id": "47fa",
+      "name": "Rajan kumar",
+      "email": "karan@gmail.com",
+      "userid": "rajan",
+      "password": "raj1234"
+    }
+  ]
+}

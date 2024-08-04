@@ -1,0 +1,29 @@
+{
+  "Student": [
+    {
+      "id": "1",
+      "name": "Rajan",
+      "rollno": 1,
+      "physics": 45,
+      "chemistry": 45,
+      "math": 45,
+      "hindi": 45,
+      "english": 45
+    },
+    {
+      "id": "2",
+      "name": "suraj",
+      "rollno": 1,
+      "physics": 45,
+      "chemistry": 45,
+      "math": 45,
+      "hindi": 45,
+      "english": 45
+    },
+    {
+      "id": "6b15",
+      "name": "45",
+      "": "96"
+    }
+  ]
+}
