@@ -14,19 +14,45 @@
 
 //     }
 // })
-// export default counterSlice.reducer;
+// export default counterSlice.reducer;   // isko create componenets mein
 // export const {increment,decrement}=counterSlice.actions;
 
 
+/*
+================================Increament or decrement==================================================
+
+*/
+
+
+// import { createSlice } from "@reduxjs/toolkit";
+// const colorSlice=createSlice({
+//     name:"mycolor",
+//     initialState:{
+//         color:"pink",
+//     },
+//     reducers:{
+//         changeColor:(state)=>{
+//             state.color="green";
+//         }
+//     }
+// })
+// export default colorSlice.reducer;
+// export const {changeColor}=colorSlice.actions;
+
+/*
+=================================change color===================================
+*/
+
 import { createSlice } from "@reduxjs/toolkit";
 const colorSlice=createSlice({
-    name:"mycolor",
+    name:"bgcolor",
     initialState:{
-        color:"pink",
+        color:"pink"
     },
     reducers:{
-        changeColor:(state)=>{
-            state.color="green";
+        changeColor:(state,action)=>{
+            console.log(action.payload);
+            state.color=action.payload;
         }
     }
 })

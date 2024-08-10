@@ -6,16 +6,28 @@
 //     }
 // })
 // export default store;
+//====================================================================
+
+// import { configureStore } from "@reduxjs/toolkit";
+
+
+
+// import clrReducer from "./ColorSlice";
+// const store=configureStore({
+//     reducer:{
+//         mycolor:clrReducer
+//     }
+// })
+// export default store
+
+// =========================================================================
 
 
 import { configureStore } from "@reduxjs/toolkit";
-
-
-
-import clrReducer from "./ColorSlice";
+import colorReducer from "./ColorSlice";
 const store=configureStore({
     reducer:{
-        mycolor:clrReducer
+        bgcolor:colorReducer
     }
 })
-export default store
+export default store;
