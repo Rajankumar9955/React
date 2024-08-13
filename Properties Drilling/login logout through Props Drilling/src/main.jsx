@@ -9,5 +9,5 @@ import LoginContext from './LoginContext.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
  <LoginContext>
     <App />
-    </LoginContext>
+</LoginContext>
 )
