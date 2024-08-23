@@ -4,9 +4,16 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import img from "../components/hostpital.jpg"
 import { Outlet,Link } from "react-router-dom";
+
+import { IoIosContrast } from "react-icons/io";
+import { FaGithub } from "react-icons/fa";
+import { useState } from 'react';
+
+
 const Layout=()=>{
+
+
     return(
       <>
       <div style={{}}>
@@ -26,6 +33,10 @@ const Layout=()=>{
             {/* <Nav.Link as={Link}to="insert">Insert</Nav.Link> */}
             <Nav.Link as={Link}to="display">Display</Nav.Link>
           </Nav>
+          <p id='date'></p>
+          <button  style={{backgroundColor:"white",marginRight:"10px",fontSize:"25px",border:"none",marginBottom:"5px"}}><FaGithub  /></button>
+          <Button id='darkmode' style={{backgroundColor:"black", marginRight:"10px"}}><IoIosContrast  style={{fontSize:"25px"}}/></Button>
+          <Button  style={{marginRight:"10px",backgroundColor:"black"}}><i className="pi pi-spin pi-cog" style={{ fontSize: '20px',marginTop:"5px" }}></i></Button>
           <Form className="d-flex">
             <Form.Control
               type="search"
@@ -40,9 +51,9 @@ const Layout=()=>{
     </Navbar>
     </div>
 
+      
 
-
-    <div style={{height:"528px", width:"100%",border:"2px solid black",backgroundImage:`url(${img})`,backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
+    <div style={{height:"528px", width:"100%",border:"2px solid black",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} >
         <Outlet/>
     </div>
     <div style={{height:"50px",backgroundColor:"skyblue"}}>
