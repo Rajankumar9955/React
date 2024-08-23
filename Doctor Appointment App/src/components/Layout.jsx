@@ -42,7 +42,7 @@ const Layout=()=>{
 
 
 
-    <div style={{height:"auto", width:"100%"}}>
+    <div style={{height:"528px", width:"100%",border:"2px solid black"}}>
         <Outlet/>
     </div>
     <div style={{height:"50px",backgroundColor:"skyblue"}}>

@@ -9,11 +9,11 @@ const Home=()=>{
     }
     return(
       <>
-       <div>
-            <h1>Wel-Come To Rajan Hospital</h1>
-             <h2>How can you Help You!</h2>
+       <div style={{width:"410px",margin:"auto",marginTop:"170px",}}>
+            <h1 >Wel-Come To Hospital</h1>
+           
             <div>
-            <Button variant="info" onClick={Book}>Book Appointment</Button>
+            <Button variant="info" onClick={Book} style={{width:"150px",marginLeft:"30%",marginTop:"20px"}}>Book Appointment</Button>
             </div>
        </div>
       </>

@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Insert from "./components/Insert";
 import Display from "./components/Display";
+import Cong from "./components/Cong";
 const App=()=>{
   return(
     <>
@@ -17,6 +18,7 @@ const App=()=>{
         <Route path="about" element={<About/>}/>
         <Route path="insert" element={<Insert/>}/>
         <Route path="display" element={<Display/>}/>
+        <Route path="cong" element={<Cong/>}/>
         </Route>
        </Routes>
     </BrowserRouter>
