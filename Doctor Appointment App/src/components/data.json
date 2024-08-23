@@ -43,6 +43,17 @@
       "zip": "462023",
       "section": "Dentist",
       "state": "Bihar"
+    },
+    {
+      "id": "da92",
+      "name": "Raj",
+      "date": "2024-08-28",
+      "contact": "8564852369",
+      "address": "Bharti Niketan",
+      "city": "purnia",
+      "zip": "462023",
+      "section": "Dentist",
+      "state": "Himachal Pradesh"
     }
   ]
 }

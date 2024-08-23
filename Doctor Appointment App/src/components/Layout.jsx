@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
+import img from "../components/hostpital.jpg"
 import { Outlet,Link } from "react-router-dom";
 const Layout=()=>{
     return(
@@ -14,7 +14,7 @@ const Layout=()=>{
       
        <Navbar expand="lg" className="bg-body-tertiary" style={{}} >
       <Container style={{}}>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand href="#">Raj Hospital</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -42,7 +42,7 @@ const Layout=()=>{
 
 
 
-    <div style={{height:"528px", width:"100%",border:"2px solid black"}}>
+    <div style={{height:"528px", width:"100%",border:"2px solid black",backgroundImage:`url(${img})`,backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
         <Outlet/>
     </div>
     <div style={{height:"50px",backgroundColor:"skyblue"}}>

@@ -2,6 +2,7 @@
 
 import { useNavigate } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
+
 const Home=()=>{
     const myNav=useNavigate();
     const Book=()=>{
@@ -9,7 +10,7 @@ const Home=()=>{
     }
     return(
       <>
-       <div style={{width:"410px",margin:"auto",marginTop:"170px",}}>
+       <div style={{width:"410px",margin:"auto",marginTop:"170px"}}>
             <h1 >Wel-Come To Hospital</h1>
            
             <div>
