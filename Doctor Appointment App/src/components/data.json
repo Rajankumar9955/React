@@ -54,6 +54,17 @@
       "zip": "462023",
       "section": "Dentist",
       "state": "Himachal Pradesh"
+    },
+    {
+      "id": "9339",
+      "name": "Vivek Swami",
+      "date": "2024-08-24",
+      "contact": "9658467952",
+      "address": "Bharti Niketan",
+      "city": "Araria",
+      "zip": "854334",
+      "section": "Orthopedic",
+      "state": "Bihar"
     }
   ]
 }
