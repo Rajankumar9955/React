@@ -3,6 +3,9 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Table from 'react-bootstrap/Table';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 
@@ -12,11 +15,11 @@ const Display=()=>{
         let url="http://localhost:3000/Appointment";
         axios.get(url).then((res)=>{
             setMydata(res.data);
-            message.success("Fetch Data")
         })
     }
     useEffect(()=>{
         loadData();
+        toast.success("Data Fetch SuccessFully")
     },[])
     const  ans=mydata.map((key)=>{
         return(
@@ -55,7 +58,7 @@ const Display=()=>{
       </tbody>
     </Table>
         
-        
+    <ToastContainer />
         </>
     )
 }

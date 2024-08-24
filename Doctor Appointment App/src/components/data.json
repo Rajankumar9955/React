@@ -65,6 +65,39 @@
       "zip": "854334",
       "section": "Orthopedic",
       "state": "Bihar"
+    },
+    {
+      "id": "5e9e",
+      "name": "madan",
+      "city": "parsauni, ward no 07",
+      "zip": "843313",
+      "contact": "6206546029",
+      "address": "Bharti Niketan",
+      "section": "Dentist",
+      "state": "Himachal Pradesh",
+      "date": "2024-08-25"
+    },
+    {
+      "id": "c40e",
+      "name": "anand",
+      "contact": "6206546029",
+      "address": "Bharti Niketan",
+      "section": "Dentist",
+      "city": "parsauni, ward no 07",
+      "state": "Himachal Pradesh",
+      "zip": "843313",
+      "date": "2024-08-13"
+    },
+    {
+      "id": "8346",
+      "name": "aman",
+      "contact": "6206546029",
+      "address": "Bharti Niketan",
+      "section": "Dentist",
+      "city": "parsauni, ward no 07",
+      "state": "Himachal Pradesh",
+      "zip": "843313",
+      "date": "2024-08-29"
     }
   ]
 }

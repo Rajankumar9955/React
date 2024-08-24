@@ -5,23 +5,34 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Outlet,Link } from "react-router-dom";
+import { useEffect, useState } from 'react';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { IoIosContrast } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
-import { useEffect, useState } from 'react';
+import { FaUser } from "react-icons/fa";
+
 
 
 
 
 
 const Layout=()=>{
+  
+
+// ==============Dark mode==========================================================
+
   const [theme,setTheme]=useState('light');
   const toggleTheme=()=>{
     if(theme==='light')
     {
       setTheme('dark')
+      toast.success("Dark Dode On")
     }else{
       setTheme('light')
+      toast.success("Dark Mode Off")
     }
   };
   useEffect(()=>{
@@ -62,13 +73,19 @@ const Layout=()=>{
               aria-label="Search"
             />
             <Button variant="outline-success">Search</Button>
+            <button style={{marginLeft:"25px",border:"none"}}><FaUser style={{fontSize:"25px"}} /></button>
           </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
     </div>
-
+{/* =====================login and registeration========== */}
+      {/*================================================ Registeration==================================================== */}
       
+
+
+
+
 
     <div style={{height:"528px", width:"100%",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} className={`Layout ${theme}`}>
         <Outlet/>
@@ -77,6 +94,7 @@ const Layout=()=>{
             <h5 style={{margin:"auto",width:"400px"}}>All Copy Are Reserved By the Admin</h5>
             <h6 style={{margin:"auto",width:"200px"}}>@Copy 2024</h6>
     </div> */}
+    <ToastContainer />
       </>
     )
   }
