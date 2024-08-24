@@ -11,6 +11,9 @@ import { FaGithub } from "react-icons/fa";
 import { useEffect, useState } from 'react';
 
 
+
+
+
 const Layout=()=>{
   const [theme,setTheme]=useState('light');
   const toggleTheme=()=>{
@@ -30,11 +33,11 @@ const Layout=()=>{
 
     return(
       <>
-      <div style={{}}>
+      <div id='nab' style={{position:"sticky",top:"0",zIndex:"2"}}>
 
       
-       <Navbar expand="lg" className="bg-body-tertiary" style={{}} >
-      <Container style={{}}>
+       <Navbar expand="lg" className="bg-body-tertiary" id='nav' >
+      <Container>
         <Navbar.Brand href="#">Raj Hospital</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -47,7 +50,7 @@ const Layout=()=>{
             {/* <Nav.Link as={Link}to="insert">Insert</Nav.Link> */}
             <Nav.Link as={Link}to="display">Display</Nav.Link>
           </Nav>
-          <p id='date'>{}</p>
+          <p className='date-time'>{}</p>
           <button  style={{backgroundColor:"white",marginRight:"10px",fontSize:"25px",border:"none",marginBottom:"5px"}}><a href="https://github.com/Rajankumar9955"><FaGithub style={{fontSize:"32px",color:"black"}} /></a></button>
           <Button onClick={toggleTheme} id='darkmode' style={{backgroundColor:"black", marginRight:"10px"}}><IoIosContrast  style={{fontSize:"25px"}}/></Button>
           <Button  style={{marginRight:"10px",backgroundColor:"black"}}><i className="pi pi-spin pi-cog" style={{ fontSize: '20px',marginTop:"5px" }}></i></Button>
@@ -67,13 +70,13 @@ const Layout=()=>{
 
       
 
-    <div style={{height:"528px", width:"100%",border:"2px solid black",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} className={`Layout ${theme}`}>
+    <div style={{height:"528px", width:"100%",backgroundRepeat:"no-repeat",backgroundSize:"cover"}} className={`Layout ${theme}`}>
         <Outlet/>
     </div>
-    <div style={{height:"50px",backgroundColor:"skyblue"}}>
+    {/* <div style={{height:"50px",backgroundColor:"skyblue"}}>
             <h5 style={{margin:"auto",width:"400px"}}>All Copy Are Reserved By the Admin</h5>
             <h6 style={{margin:"auto",width:"200px"}}>@Copy 2024</h6>
-    </div>
+    </div> */}
       </>
     )
   }
