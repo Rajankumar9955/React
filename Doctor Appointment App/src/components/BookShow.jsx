@@ -1,6 +1,4 @@
 
-
-import { message } from "antd";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Table from 'react-bootstrap/Table';
@@ -10,11 +8,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from "react-router-dom";
 
 
-
 const BookShow=()=>{
     const [mydata, setMydata]=useState([]);
     const loadData=()=>{
-        let url="http://localhost:5000/booking";
+        let url="http://localhost:4000/booking";
         axios.get(url).then((res)=>{
             setMydata(res.data);
         })
@@ -23,11 +20,13 @@ const BookShow=()=>{
         loadData();
         toast.success("Data Fetch SuccessFully")
     },[])
-
-const Mynav=useNavigate()
-    const Billgenerate=()=>{
-         Mynav("/EditBook")
+   
+    const mynav=useNavigate()
+    const billgenerate=(id)=>{
+        mynav(`/bgenerate/${id}`);
     }
+
+    
     const  ans=mydata.map((key)=>{
         return(
             <>
@@ -41,7 +40,7 @@ const Mynav=useNavigate()
                 <td>{key.state}</td>
                 <td>{key.zip}</td>
                 <td>
-                    <button onClick={Billgenerate}>General Bill</button>
+                    <button onClick={()=>{billgenerate(key.id)}}>General Bill</button>
                 </td>
             </tr>
             

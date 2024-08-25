@@ -10,7 +10,8 @@ import Cong from "./components/Cong";
 import Services from "./components/Services";
 import Book from "./components/Book";
 import BookShow from "./components/BookShow";
-import EditBook from "./components/EditBook";
+import Bgenerate from "./components/Bgenerate";
+
 const App=()=>{
   return(
     <>
@@ -24,9 +25,10 @@ const App=()=>{
         <Route path="display" element={<Display/>}/>
         <Route path="cong" element={<Cong/>}/>
         <Route path="services" element={<Services/>}/>
-        <Route path="book" element={<Book/>}/>
+        <Route path="book/:id" element={<Book/>}/>
         <Route path="bookshow" element={<BookShow/>}/>
-        <Route path="editbook" element={<EditBook/>}/>
+        <Route path="bgenerate/:id" element={<Bgenerate/>}/>
+        
         </Route>
        </Routes>
     </BrowserRouter>

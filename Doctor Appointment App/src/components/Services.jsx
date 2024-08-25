@@ -6,10 +6,11 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useNavigate } from 'react-router-dom';
+
 const Services=()=>{
     const mynav=useNavigate()
-    const booknow=()=>{
-        mynav("/book")
+    const booknow=(id)=>{
+        mynav(`/book/${id}`)
     }
     
     return(
@@ -30,7 +31,7 @@ const Services=()=>{
           Some quick example text to build on the BED NO:-1 and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant= "primary" onClick={booknow}>Book Now</Button>
+        <Button variant= "primary" onClick={()=>{booknow("1")}}>Book Now</Button>
       </Card.Body>
     </Card>
         </Col>
@@ -43,7 +44,7 @@ const Services=()=>{
           Some quick example text to build on the BED NO:-2 and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant= "primary" onClick={booknow}>Book Now</Button>
+        <Button variant= "primary" onClick={()=>{booknow("2")}}>Book Now</Button>
       </Card.Body>
     </Card>
         </Col>
@@ -56,7 +57,7 @@ const Services=()=>{
           Some quick example text to build on the BED  and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant= "primary" onClick={booknow}>Book Now</Button>
+        <Button variant= "primary" onClick={()=>{booknow("3")}}>Book Now</Button>
       </Card.Body>
     </Card>
         </Col>
@@ -73,7 +74,7 @@ const Services=()=>{
           Some quick example text to build on the BED NO:-3 and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant= "primary" onClick={booknow}>Book Now</Button>
+        <Button variant= "primary" onClick={()=>{booknow("4")}}>Book Now</Button>
       </Card.Body>
     </Card>
         </Col>
@@ -85,7 +86,7 @@ const Services=()=>{
           Some quick example text to build on the BED NO:-3 and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant= "primary" onClick={booknow}>Book Now</Button>
+        <Button variant= "primary" onClick={()=>{booknow("5")}}>Book Now</Button>
       </Card.Body>
     </Card></Col>
         <Col id="servic"> <Card style={{ width: '18rem' }}>
@@ -96,7 +97,7 @@ const Services=()=>{
           Some quick example text to build on the BED NO:-3 and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant= "primary" onClick={booknow}>Book Now</Button>
+        <Button variant= "primary" onClick={()=>{booknow("6")}}>Book Now</Button>
       </Card.Body>
     </Card></Col>
       </Row>

@@ -12,16 +12,6 @@
       "zip": "462023"
     },
     {
-      "id": "31f8",
-      "name": "Rajan Kumar kumar",
-      "city": "parsauni, ward no 07",
-      "zip": "843313",
-      "contact": "9642556756",
-      "address": "Bharti Niketan",
-      "section": "A",
-      "state": "Bihar"
-    },
-    {
       "id": "68c7",
       "name": "Rajan ",
       "contact": "9642556756",
@@ -31,17 +21,6 @@
       "state": "Bihar",
       "zip": "843313",
       "date": "2024-08-29"
-    },
-    {
-      "id": "2b09",
-      "name": "Rajan ",
-      "contact": "9642556756",
-      "address": "Bharti Niketan",
-      "section": "A",
-      "city": "parsauni, ward no 07",
-      "state": "Bihar",
-      "zip": "843313",
-      "date": "2024-08-22"
     },
     {
       "id": "15f6",
@@ -55,27 +34,43 @@
       "date": "2024-08-22"
     },
     {
-      "id": "d8e1",
-      "name": "Rajan ",
-      "contact": "9642556756",
-      "address": "Bharti Niketan",
-      "section": "A",
-      "city": "parsauni, ward no 07",
-      "state": "Bihar",
-      "zip": "843313",
-      "date": "2024-08-22"
+      "id": "37e3"
     },
     {
-      "id": "3972"
+      "id": "2464"
     },
     {
-      "id": "30ae"
+      "id": "778a"
     },
     {
-      "id": "2458",
-      "name": "Rajan Kumar kumar",
-      "city": "parsauni, ward no 07",
-      "zip": "843313"
+      "id": "2661"
+    },
+    {
+      "id": "d8ff"
+    },
+    {
+      "id": "be36"
+    },
+    {
+      "id": "10fe"
+    },
+    {
+      "id": "dc2a"
+    },
+    {
+      "id": "068a"
+    },
+    {
+      "id": "7f2f"
+    },
+    {
+      "id": "6eed"
+    },
+    {
+      "id": "2ef7"
+    },
+    {
+      "id": "f53a"
     }
   ]
 }

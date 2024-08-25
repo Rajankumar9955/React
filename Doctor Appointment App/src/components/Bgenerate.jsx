@@ -5,32 +5,38 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 
-import { useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { message } from 'antd';
 
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import axios from 'axios';
 
-const EditBook=()=>{
+
+const Bgenerate=()=>{
+
+    const {id} = useParams();
+
     const [cnt,setCnt]=useState({});
+    const loadData = () => {
+    let url = `http://localhost:3000/Restuarent/${id}`;
+    axios.get(url).then((res) => {
+        setCnt(res.data);
+    });
+  };
+  useEffect(() => {
+    loadData();
+  });
+
+  
    const  handleInput=(e)=>{
        let name=e.target.name;
        let value=e.target.value;
        setCnt(values=>({...values,[name]:value}))
        console.log(cnt);
    }
-   const myNav=useNavigate();
-   const handleSubmit=()=>{
-        let url="http://localhost:5000/booking";
-        axios.post(url,cnt).then((res)=>{
-            message.success("successFully Booked")
-            myNav("/cong")
-        })
-   }
-
     return(
-      <>
-   <div style={{backgroundColor:""}}>
+        <>
+     <div style={{backgroundColor:""}}>
            <div style={{height:"480px", width:"500px",margin:"auto",border:"1px solid black",marginTop:"20px",borderRadius:"20px",backgroundColor:"black"}}>
            <Form style={{width:"400px",margin:"auto",marginTop:"20px"}}>
       <Row className="mb-3">
@@ -91,13 +97,11 @@ const EditBook=()=>{
         </Form.Group>
       </Row>
 
-      <Button variant="primary" onClick={handleSubmit}>
-        Book Now
-      </Button>
     </Form>
            </div>
            </div>
-      </>
+        
+        </>
     )
-  }
-  export default EditBook;
+}
+export default Bgenerate;
