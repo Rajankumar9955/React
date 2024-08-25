@@ -7,6 +7,10 @@ import About from "./components/About";
 import Insert from "./components/Insert";
 import Display from "./components/Display";
 import Cong from "./components/Cong";
+import Services from "./components/Services";
+import Book from "./components/Book";
+import BookShow from "./components/BookShow";
+import EditBook from "./components/EditBook";
 const App=()=>{
   return(
     <>
@@ -19,6 +23,10 @@ const App=()=>{
         <Route path="insert" element={<Insert/>}/>
         <Route path="display" element={<Display/>}/>
         <Route path="cong" element={<Cong/>}/>
+        <Route path="services" element={<Services/>}/>
+        <Route path="book" element={<Book/>}/>
+        <Route path="bookshow" element={<BookShow/>}/>
+        <Route path="editbook" element={<EditBook/>}/>
         </Route>
        </Routes>
     </BrowserRouter>

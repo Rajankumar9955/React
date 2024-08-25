@@ -60,6 +60,7 @@ const Layout=()=>{
             <Nav.Link as={Link}to="about">About</Nav.Link>
             {/* <Nav.Link as={Link}to="insert">Insert</Nav.Link> */}
             <Nav.Link as={Link}to="display">Display</Nav.Link>
+            <Nav.Link as={Link}to="services">Services</Nav.Link>
           </Nav>
           <p className='date-time'>{}</p>
           <button  style={{backgroundColor:"white",marginRight:"10px",fontSize:"25px",border:"none",marginBottom:"5px"}}><a href="https://github.com/Rajankumar9955"><FaGithub style={{fontSize:"32px",color:"black"}} /></a></button>
