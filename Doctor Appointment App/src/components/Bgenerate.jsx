@@ -13,12 +13,12 @@ import axios from 'axios';
 
 
 const Bgenerate=()=>{
-
+  const bed=1;
     const {id} = useParams();
 
     const [cnt,setCnt]=useState({});
     const loadData = () => {
-    let url = `http://localhost:3000/Restuarent/${id}`;
+    let url = `http://localhost:4000/booking/${id}`;
     axios.get(url).then((res) => {
         setCnt(res.data);
     });
@@ -37,8 +37,11 @@ const Bgenerate=()=>{
     return(
         <>
      <div style={{backgroundColor:""}}>
-           <div style={{height:"480px", width:"500px",margin:"auto",border:"1px solid black",marginTop:"20px",borderRadius:"20px",backgroundColor:"black"}}>
-           <Form style={{width:"400px",margin:"auto",marginTop:"20px"}}>
+           <div style={{height:"565px", width:"450px",margin:"auto",border:"1px solid black",marginTop:"10px",borderRadius:"20px"}}>
+           <Form style={{width:"400px",margin:"auto",marginTop:"10px"}}>
+           <center>
+            <h3 style={{ fontWeight: "bold",marginTop:"-5px",marginBottom:"-3px" }}>Print Your Bill</h3>
+          </center>
       <Row className="mb-3">
         <Form.Group as={Col} controlId="formGridEmail">
           <Form.Label>Name</Form.Label>
@@ -61,15 +64,18 @@ const Bgenerate=()=>{
         <Form.Control placeholder="Enter Address" name="address" value={cnt.address} onChange={handleInput}/>
       </Form.Group>
 
+      <Form.Group as={Col} controlId="formGridCity">
+          <Form.Label>Total Bill</Form.Label>
+          <Form.Control placeholder="Total Bill" name="" value={"1 Bed " + " * " + " 1000 "+" = ₹"+bed*1000} onChange={handleInput} />
+        </Form.Group>
+
       <Form.Group as={Col} controlId="formGridState">
           <Form.Label>Section</Form.Label>
           <Form.Select defaultValue="Choose..." name="section" value={cnt.section} onChange={handleInput}>
-            <option>Choose...</option>
-            <option>Orthopedic</option>
-            <option>Dentist</option>
-            <option>Cardiologist</option>
-            <option>Gastroenterologist</option>
-            <option>Oncologist</option>
+            <option>Choose</option>
+            <option>A</option>
+            <option>B</option>
+            
           </Form.Select>
         </Form.Group>
 
@@ -91,12 +97,16 @@ const Bgenerate=()=>{
           </Form.Select>
         </Form.Group>
 
+        
+
         <Form.Group as={Col} controlId="formGridZip">
           <Form.Label>Zip</Form.Label>
           <Form.Control placeholder="Enter Zip" name="zip" value={cnt.zip} onChange={handleInput} />
         </Form.Group>
       </Row>
-
+      <Button variant="primary" onClick={print}>
+       Print Here
+      </Button>
     </Form>
            </div>
            </div>

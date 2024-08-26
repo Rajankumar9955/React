@@ -31,7 +31,7 @@ const Insert=()=>{
     return(
       <>
    <div style={{backgroundColor:""}}>
-           <div style={{height:"480px", width:"500px",margin:"auto",border:"1px solid black",marginTop:"20px",borderRadius:"20px",backgroundColor:"black"}}>
+           <div style={{height:"480px", width:"500px",margin:"auto",border:"1px solid black",marginTop:"50px",borderRadius:"20px"}}>
            <Form style={{width:"400px",margin:"auto",marginTop:"20px"}}>
       <Row className="mb-3">
         <Form.Group as={Col} controlId="formGridEmail">

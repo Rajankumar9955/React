@@ -32,9 +32,9 @@ const Book=()=>{
     return(
       <>
    <div style={{backgroundColor:""}}>
-           <div style={{height:"520px", width:"480px",margin:"auto",border:"1px solid black",marginTop:"30px",borderRadius:"20px",backgroundColor:"teal"}}>
+           <div style={{height:"520px", width:"480px",margin:"auto",border:"1px solid black",marginTop:"30px",borderRadius:"20px",backgroundColor:""}}>
            <Form style={{width:"400px",margin:"auto",marginTop:"5px"}}>
-            <p style={{width:"125px",margin:"auto",fontSize:"25px",backgroundColor:"green",borderRadius:"10px"}}>BED NO: {id}</p>
+            <p style={{width:"125px",margin:"auto",fontSize:"25px",backgroundColor:"",borderRadius:"10px"}}>BED NO: {id}</p>
       <Row className="mb-3">
         <Form.Group as={Col} controlId="formGridEmail">
           <Form.Label>Name</Form.Label>

@@ -40,7 +40,7 @@ const BookShow=()=>{
                 <td>{key.state}</td>
                 <td>{key.zip}</td>
                 <td>
-                    <button onClick={()=>{billgenerate(key.id)}}>General Bill</button>
+                    <button onClick={()=>{billgenerate(key.id)}} style={{borderRadius:"10px"}}>General Bill</button>
                 </td>
             </tr>
             
@@ -60,6 +60,7 @@ const BookShow=()=>{
           <th>City</th>
           <th>State</th>
           <th>Zip</th>
+          <th>Bill Generate</th>
         </tr>
       </thead>
       <tbody>
