@@ -11,6 +11,8 @@ import Services from "./components/Services";
 import Book from "./components/Book";
 import BookShow from "./components/BookShow";
 import Bgenerate from "./components/Bgenerate";
+import LRpage from "./components/LRpage";
+import Dashboard from "./components/Dashboard";
 
 const App=()=>{
   return(
@@ -28,6 +30,9 @@ const App=()=>{
         <Route path="book/:id" element={<Book/>}/>
         <Route path="bookshow" element={<BookShow/>}/>
         <Route path="bgenerate/:id" element={<Bgenerate/>}/>
+        <Route path="lrpage" element={<LRpage/>}/>
+        <Route path="dashboard" element={<Dashboard/>}/>
+        
         
         </Route>
        </Routes>

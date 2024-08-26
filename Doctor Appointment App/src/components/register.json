@@ -1,10 +1,25 @@
 {
-    "registerationLogin":[{
+  "registerationLogin": [
+    {
       "id": "1",
       "name": "Rajan",
+      "contact": "9955236973",
       "email": "krajan92946@gmail.com",
-      "userid": "Rajan01",
       "password": "Raj12345"
+    },
+    {
+      "id": "49ea",
+      "name": "sushil",
+      "contact": "85412541284512",
+      "email": "sk@gmail.com",
+      "password": "54120852"
+    },
+    {
+      "id": "5007",
+      "name": "Raja",
+      "contact": "9104317453",
+      "email": "Raja@gmail.com",
+      "password": "Raja1234"
     }
-]
+  ]
 }

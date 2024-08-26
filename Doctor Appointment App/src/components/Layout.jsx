@@ -13,7 +13,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { IoIosContrast } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
-
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -21,7 +21,10 @@ import { FaUser } from "react-icons/fa";
 
 const Layout=()=>{
   
-
+  const Mynav=useNavigate();
+const LoginUser=()=>{
+    Mynav("/lrpage")
+}
 // ==============Dark mode==========================================================
 
   const [theme,setTheme]=useState('light');
@@ -74,7 +77,7 @@ const Layout=()=>{
               aria-label="Search"
             />
             <Button variant="outline-success">Search</Button>
-            <button style={{marginLeft:"25px",border:"none"}}><FaUser style={{fontSize:"25px"}} /></button>
+            <button style={{marginLeft:"25px",border:"none"}} onClick={LoginUser}><FaUser style={{fontSize:"25px"}} /></button>
           </Form>
         </Navbar.Collapse>
       </Container>

@@ -17,9 +17,11 @@ const Services=()=>{
         <>
            
 <div>
-            <div>Wel-come to Service Section</div>
+            <center>
+              <h2 style={{marginTop:"20px",marginBottom:"15px"}}>Welcome to Services Section</h2>
+            </center>
     <div>
-     <Container>
+     <Container style={{marginRight:"50px"}}>
         <div>
       <Row>
         <Col id="ser">
@@ -64,7 +66,7 @@ const Services=()=>{
         </Row>
         </div>
         <div>
-      <Row>
+      <Row style={{marginTop:"30px"}}>
         <Col id="serv">
         <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="public/images/adv1.jpg" />
