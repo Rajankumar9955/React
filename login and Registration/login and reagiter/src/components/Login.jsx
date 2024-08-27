@@ -18,7 +18,7 @@ const Login=()=>{
     setInput(values=>({...values,[name]:value}));
   }
   const handleSubmit=()=>{
-    let url="http://localhost:3000/Student";
+    let url="http://localhost:5000/Student";
     axios.post(url,input).then((res)=>{
         setShow(false);
         alert("Your are Registered!!");
