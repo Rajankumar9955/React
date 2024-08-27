@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 import Button from 'react-bootstrap/Button';
 import { message } from "antd";
 import { useEffect, useState } from "react";
