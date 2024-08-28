@@ -28,7 +28,7 @@ const Layout=()=>{
     return (
         <>
         <div id="topmenu">
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="lg" className="bg-body-tertiary" style={{}}>
       <Container fluid>
         <Navbar.Brand href="#" style={{marginLeft:"20px"}}>CCTV BAZAR</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
