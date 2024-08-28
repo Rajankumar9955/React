@@ -27,7 +27,7 @@ import {
 const Layout=()=>{
     return (
         <>
-        <div style={{}}>
+        <div id="topmenu">
         <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
         <Navbar.Brand href="#" style={{marginLeft:"20px"}}>CCTV BAZAR</Navbar.Brand>
@@ -68,8 +68,6 @@ const Layout=()=>{
         </Navbar.Collapse>
       </Container>
     </Navbar>
-
-
 
         </div>
        <div >
