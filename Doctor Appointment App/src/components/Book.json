@@ -34,21 +34,6 @@
       "date": "2024-08-22"
     },
     {
-      "id": "0de9"
-    },
-    {
-      "id": "5a77"
-    },
-    {
-      "id": "17b3"
-    },
-    {
-      "id": "1521"
-    },
-    {
-      "id": "de81"
-    },
-    {
       "id": "a20f",
       "name": "sanjay kumar",
       "date": "2024-09-07",
@@ -58,6 +43,17 @@
       "city": "Bhopal",
       "zip": "462023",
       "state": "Madhya Pradesh"
+    },
+    {
+      "id": "5817",
+      "name": "Rahul Kumar",
+      "date": "2024-08-31",
+      "contact": "8569457695",
+      "address": "ambikapur,ward no 19",
+      "section": "A",
+      "city": "Ambikapur",
+      "state": "Chhattisgarh",
+      "zip": "497226"
     }
   ]
 }

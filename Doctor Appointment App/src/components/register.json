@@ -20,6 +20,13 @@
       "contact": "9104317453",
       "email": "Raja@gmail.com",
       "password": "Raja1234"
+    },
+    {
+      "id": "3e49",
+      "name": "Rahul Kumar",
+      "contact": "8564697586",
+      "email": "Rahul@gmail.com",
+      "password": "Rahul1234"
     }
   ]
 }

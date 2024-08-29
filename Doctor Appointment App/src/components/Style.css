@@ -28,7 +28,7 @@
   }
  
   #btn{
-    width:400px;
+    width:300px;
     height: 70px;
     margin-top: 10px;
     border-radius: 10px;
@@ -61,6 +61,7 @@
   }
   #btnmain
   {
+    margin-left: 10px;
     margin-top: 20px;
   }
   #paramain  p img{

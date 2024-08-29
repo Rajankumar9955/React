@@ -4,7 +4,9 @@
 const Cong=()=>{
     return(
         <>
-        <h2 style={{width:"765px",margin:"auto",marginTop:"10%",height:"200px",display:"flex",alignItems:"center",backgroundColor:"white",borderRadius:"20px",color:"green"}}>Congratulation! You Have Booked Your Appoinment</h2>
+           <center>
+            <p style={{marginTop:"18.5%",fontSize:"35px",color:"green",fontWeight:"bold"}}>Congratulations! You have Booked your Appointment!</p>
+           </center>
         </>
     )
 }

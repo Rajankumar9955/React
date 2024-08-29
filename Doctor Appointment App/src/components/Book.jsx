@@ -83,6 +83,7 @@ const Book=()=>{
             <option>Himachal Pradesh</option>
             <option>Bihar</option>
             <option>Mumbai</option>
+            <option>Chhattisgarh</option>
           </Form.Select>
         </Form.Group>
 
