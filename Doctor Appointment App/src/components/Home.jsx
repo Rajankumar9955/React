@@ -25,7 +25,7 @@ const Home=()=>{
        <Carousel fade>
 
       <Carousel.Item>
-      <img src="public/images/first.jpg" alt=""  width="100%" height="520px" />
+      <img src="https://wallpaperaccess.com/full/1282835.jpg" alt=""  width="100%" height="520px" />
         <Carousel.Caption>
         <Button variant="info" onClick={Book} style={{width:"150px"}} id='book'>Book Appointment</Button>
           <h3 >WelCome To Raj Hospital</h3>
@@ -33,7 +33,7 @@ const Home=()=>{
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <img src="public/images/second.jpeg" alt=""  width="100%" height="520px" />
+      <img src="https://heal-responsibly.com/wp-content/uploads/2020/08/33f72-adobestock_224173795.jpeg" alt=""  width="100%" height="520px" />
         <Carousel.Caption>
         <Button variant="info" onClick={Book} style={{width:"150px",marginLeft:"-5px"}}>Book Appointment</Button>
           <h3>WelCome To Raj Hospital</h3>
@@ -41,7 +41,7 @@ const Home=()=>{
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <img src="public/images/third.jpg" alt=""  width="100%" height="519px" />
+      <img src="https://static01.nyt.com/images/2017/02/16/well/doctors-hospital-design/doctors-hospital-design-videoSixteenByNine3000.jpg?year=2017&h=1688&w=3000&sig=0x34446ee56203045f76c334c39d398eb5&tw=1" alt=""  width="100%" height="519px" />
         <Carousel.Caption>
       <Button variant="info" onClick={Book} style={{width:"150px"}}>Book Appointment</Button>
           <h3>WelCome To Raj Hospital</h3>
@@ -58,16 +58,16 @@ const Home=()=>{
         <Col sm>
              <div id='paramain'>
               <div id='para'>
-              <p> <img src="public/images/aala.jpg" alt="" width="50px" height="35px"  /> Proffesional Staff</p>
+              <p> <img src="https://th.bing.com/th/id/OIP.OiosKASLpYk6BtYH5A4r8QAAAA?rs=1&pid=ImgDetMain" alt="" width="50px" height="35px"  /> Proffesional Staff</p>
               </div>
               <div id='para'>
-              <p ><img src="public/images/ambulation.jpeg" alt="" width="50px" height="35px"  /> Emergency Treatment</p>
+              <p ><img src="https://hitinfrastructure.com/images/site/article_headers/_normal/GETTY_2019-02-15_ambulance.jpg" alt="" width="50px" height="35px"  /> Emergency Treatment</p>
               </div>
               <div id='para'>
-              <p ><img src="public/images/docs.jpg" alt="" width="50px" height="35px"  /> Trusted Doctors</p>
+              <p ><img src="https://cdn-icons-png.flaticon.com/512/1225/1225561.png" alt="" width="50px" height="35px"  /> Trusted Doctors</p>
               </div>
               <div id='para'>
-              <p ><img src="public/images/ser.png" alt="" width="50px" height="35px"  /> 24/7 Services</p>
+              <p ><img src="https://redwoodcitytow.com/wp-content/uploads/2020/03/24-7-icon-01.png" alt="" width="50px" height="35px"  /> 24/7 Services</p>
               </div>
             </div>
         </Col>
