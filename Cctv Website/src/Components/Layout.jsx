@@ -24,14 +24,27 @@ import {
   MDBBtn
 } from 'mdb-react-ui-kit';
 
+// import { useSelector } from "react-redux";
+// import { useNavigate } from "react-router-dom";
+
 const Layout=()=>{
+  
+  // console.log(MyData);
+  // const CountData=MyData.length;
+  // const navigate=useNavigate();
+     
+  // const mycart=()=>{
+  //   navigate("/mycart")
+  // }
+
+      
     return (
         <>
         <div id="topmenu">
         <Navbar expand="lg" className="bg-body-tertiary" style={{}}>
       <Container fluid>
         <Navbar.Brand href="#" style={{marginLeft:"20px"}}>CCTV BAZAR</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Toggle  aria-controls="navbarScroll" style={{color:"white",backgroundColor:"black"}} />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
@@ -64,7 +77,7 @@ const Layout=()=>{
             <Button variant="outline-success" style={{marginRight:"20px"}}>Search</Button>
           </Form>
           <button style={{border:"none",marginRight:"10px"}}  >< FaUser style={{fontSize:"24px",height:"50px"}}/></button> 
-          <button style={{border:"none",marginRight:"80px"}}  ><FaShoppingCart  style={{fontSize:"24px",height:"50px"}}/><sup style={{fontSize:"20px"}}>0</sup></button> 
+          <button style={{border:"none",marginRight:"80px"}}  ><FaShoppingCart  style={{fontSize:"24px",height:"50px"}}   /><sup style={{fontSize:"20px"}}>0</sup></button> 
         </Navbar.Collapse>
       </Container>
     </Navbar>

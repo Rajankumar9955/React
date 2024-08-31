@@ -9,11 +9,9 @@ import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { addcartData } from './addtocartSlice';
 
-
 const Home=()=>{
-    const dispatch=useDispatch();
 
-
+const dispatch=useDispatch();
 const [mydata,setMydata]=useState([]);
 const loadData=()=>{
     let url="http://localhost:3000/products";
@@ -26,10 +24,8 @@ useEffect(()=>{
 })
 
 
-const addcartData=(id,name,brand,price,desc,image)=>{
-  dispatch(addcartData(id,name,brand,price,desc,image))
-  console.log(dispatch);
-
+const addDataToCart=(id,name,brand,price,desc,image)=>{
+  dispatch(addcartData({id:id,name:name,brand:brand,price:price,description:desc,image:image,qnty:1}))
 
 }
 let ans=mydata.map((key)=>{
@@ -44,7 +40,7 @@ let ans=mydata.map((key)=>{
         <h3 style={{color:"green"}}>{key.price}</h3>
         </Card.Text>
       
-        <Button variant="primary" onClick={()=>{addcartData(key.id, key.name, key.brand, key.price, key.description, key.image)}}>Order Now</Button>
+        <Button variant="primary" onClick={()=>{addDataToCart(key.id, key.name, key.brand, key.price, key.description, key.image)}}>ADD to Card</Button>
       </Card.Body>
     </Card>
         </>
