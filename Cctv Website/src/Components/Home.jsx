@@ -11,24 +11,26 @@ import { addcartData } from './addtocartSlice';
 
 const Home=()=>{
 
-const dispatch=useDispatch();
+
 const [mydata,setMydata]=useState([]);
+const dispatch=useDispatch();
+
 const loadData=()=>{
-    let url="http://localhost:3000/products";
-    axios.get(url).then((res)=>{
+    let api="http://localhost:3000/products";
+    axios.get(api).then((res)=>{
         setMydata(res.data);
     })
 }
 useEffect(()=>{
     loadData();
-})
+},[])
 
 
-const addDataToCart=(id,name,brand,price,desc,image)=>{
-  dispatch(addcartData({id:id,name:name,brand:brand,price:price,description:desc,image:image,qnty:1}))
+const addDataToCart=(id,  name, cate, brand,  price, desc,  image)=>{
+  dispatch(addcartData({id:id,  name:name, category:cate, brand:brand,  price:price,  description:desc,image:image, qnty:1}))
 
 }
-let ans=mydata.map((key)=>{
+const ans=mydata.map((key)=>{
      return(
         <>
         <Card style={{ width: '18rem' }}>
@@ -40,7 +42,7 @@ let ans=mydata.map((key)=>{
         <h3 style={{color:"green"}}>{key.price}</h3>
         </Card.Text>
       
-        <Button variant="primary" onClick={()=>{addDataToCart(key.id, key.name, key.brand, key.price, key.description, key.image)}}>ADD to Card</Button>
+        <Button variant="primary" onClick={()=>{addDataToCart(key.id, key.name,key.category, key.brand, key.price, key.description, key.image)}}>ADD to Card</Button>
       </Card.Body>
     </Card>
         </>
@@ -84,7 +86,9 @@ let ans=mydata.map((key)=>{
             <h2 style={{marginTop:"20px"}}>This Website About CCTV Camera</h2>
         </center>
     </div>
-    <div id='products'>{ans}</div>
+    <div id='products'>
+      {ans}
+      </div>
         
     </>
     )

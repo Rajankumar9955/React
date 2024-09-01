@@ -1,5 +1,5 @@
-;
-import { Link, Outlet } from "react-router-dom";
+
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 
@@ -23,20 +23,18 @@ import {
   MDBRow,
   MDBBtn
 } from 'mdb-react-ui-kit';
-
-// import { useSelector } from "react-redux";
-// import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Layout=()=>{
-  
-  // console.log(MyData);
-  // const CountData=MyData.length;
-  // const navigate=useNavigate();
-     
-  // const mycart=()=>{
-  //   navigate("/mycart")
-  // }
+  const MyData=useSelector((state)=>state.addCart.cart);
+  console.log(MyData);
+  const DataCount=MyData.length;
 
+const myNav=useNavigate();
+
+const mycart=()=>{
+  myNav("/mycart")
+}
       
     return (
         <>
@@ -77,7 +75,7 @@ const Layout=()=>{
             <Button variant="outline-success" style={{marginRight:"20px"}}>Search</Button>
           </Form>
           <button style={{border:"none",marginRight:"10px"}}  >< FaUser style={{fontSize:"24px",height:"50px"}}/></button> 
-          <button style={{border:"none",marginRight:"80px"}}  ><FaShoppingCart  style={{fontSize:"24px",height:"50px"}}   /><sup style={{fontSize:"20px"}}>0</sup></button> 
+          <button style={{border:"none",marginRight:"80px"}}  onClick={mycart}><FaShoppingCart  style={{fontSize:"24px",height:"50px"}}   /><sup style={{fontSize:"20px"}}>{DataCount}</sup></button> 
         </Navbar.Collapse>
       </Container>
     </Navbar>

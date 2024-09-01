@@ -2,96 +2,108 @@
     "products":[{
         "id":1,
         "name":"Smart Cctv",
+        "category":"",
         "brand":"Hikvision",
-        "price":"₹3,200",
+        "price":3200,
         "description":"HIKVISION (1080P) Indoor Night Vision Dome Wired Camera 1Pcs",
         "image":"https://m.media-amazon.com/images/I/41gQatReztL._SY300_SX300_QL70_FMwebp_.jpg"
     },
     {
         "id":2,
         "name":"IMOU 360°",
+        "category":"",
         "brand":"IMOU",
-        "price":"₹2,199",
+        "price":2199,
         "description":"1080P Full HD Security Camera, Human Detection",
         "image":"https://m.media-amazon.com/images/I/41J7VaBmGQL._SX569_.jpg"
     },
     {
         "id":3,
         "name":"QUBO Smart",
+        "category":"",
         "brand":"Qubo",
-        "price":"₹1,590",
+        "price":1590,
         "description":" Way Talk Night Vision Cloud & SD Card Recording",
         "image":"https://m.media-amazon.com/images/I/4189ssgrMFL._SX569_.jpg"
     },
     {
         "id":4,
         "name":"Eyetech 360 ",
+        "category":"",
         "brand":"Eyetech",
-        "price":"₹1,299",
+        "price":1299,
         "description":"Wireless IP WiFi Camera, Bulb Camera 360 1080p",
         "image":"https://m.media-amazon.com/images/I/512A0ubnpWL._SX569_.jpg"
     },
     {
         "id":5,
         "name":"CP PLUS",
+        "category":"",
         "brand":"CP",
-        "price":"₹1,499",
+        "price":1499,
         "description":"360° Full HD Home Security Color Night Vision",
         "image":"https://m.media-amazon.com/images/I/31Lo31c7kwL._SX300_SY300_QL70_FMwebp_.jpg"
     },
     {
         "id":6,
         "name":"EYETECH 360",
+        "category":"",
         "brand":"EYETECH",
-        "price":"₹1,799",
+        "price":1799,
         "description":"Smart Motion Detection | Outdoor Camera",
         "image":"https://m.media-amazon.com/images/I/417V3by6a5L._SX569_.jpg"
     },
     {
         "id":7,
         "name":"Dual Lens",
+        "category":"",
         "brand":"PKST ",
-        "price":"₹2,999",
+        "price":2999,
         "description":"Motion Detection 110-240V Rotatable IP66 Surveillance Camera for Outdoor",
         "image":"https://m.media-amazon.com/images/I/61v1JC+HmUL._SX569_.jpg"
     },
     {
         "id":8,
         "name":"Grousale 3",
+        "category":"",
         "brand":"Grousale",
-        "price":"₹1,199",
+        "price":1199,
         "description":"Camera with Color Night Vision, 360°",
         "image":"https://m.media-amazon.com/images/I/41CNGCLtNLL._SX569_.jpg"
     },
     {
         "id":9,
         "name":"Eyetech HD",
+        "category":"",
         "brand":"Eyetech",
-        "price":"₹1,999",
+        "price":1999,
         "description":"Motion Detection/Best Light Vision/Waterproof",
         "image":"https://m.media-amazon.com/images/I/41zmZ36HTcL._SX569_.jpg"
     },
     {
         "id":10,
         "name":"QIWA FHD",
+        "category":"",
         "brand":"QIWA",
-        "price":"₹1,258",
+        "price":1258,
         "description":"080P WiFi Security Camera | Night Vision",
         "image":"https://m.media-amazon.com/images/I/41SOlmi17aL.jpg"
     },
     {
         "id":11,
         "name":"DDLC HD",
+        "category":"",
         "brand":"DDLC",
-        "price":"₹1,536",
+        "price":1536,
         "description":"Wi-Fi Wireless Security Camera 1080p ",
         "image":"https://m.media-amazon.com/images/I/61TW9nWXlWL._SX569_.jpg"
     },
     {
         "id":12,
         "name":" V380",
+        "category":"",
         "brand":"DDLC",
-        "price":"₹1,399",
+        "price":1399,
         "description":"WiFi CCTV Security Camera for Home",
         "image":"https://m.media-amazon.com/images/I/61oTfD6wHdL._SX569_.jpg"
     }
