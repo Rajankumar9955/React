@@ -33,9 +33,9 @@ const MyCart=()=>{
                 <td> <img src={key.image} wudth="100" height="100" /> </td>
                 <td>{key.name} </td>
                 <td>{key.brand} </td>
-                <td>{key.category} </td>
+                <td>{key.category}</td>
                 <td style={{fontSize:"12px", width:"300px"}}>{key.description} </td>
-                <td>{key.price} </td>
+                <td>₹{key.price} </td>
                 <th>
                 <FaMinusCircle onClick={()=>{decQnty(key.id)}}  style={{cursor:"pointer"}}/> 
                  <span style={{marginLeft:"5px", marginRight:"5px"}}> 
@@ -44,10 +44,10 @@ const MyCart=()=>{
                 <FaPlusCircle onClick={()=>{incQnty(key.id)}}  style={{cursor:"pointer"}}/>
                  </th>
                 <th> 
-                    {key.price*key.qnty}
+                   ₹{key.price*key.qnty}
                     </th>
                 <td>
-                 <Button var="secondary" onClick={()=>{dataDelete(key.id)}} > Delete</Button>    
+                 <Button var="secondary" onClick={()=>{dataDelete(key.id)}} > Remove</Button>    
                  </td>
               </tr>
             </>
@@ -57,7 +57,7 @@ const MyCart=()=>{
 
     return(
         <>
-           <center> <h1> My Cart</h1></center>
+           <center> <h1 style={{marginTop:"20px",marginBottom:"20px"}}> My Cart</h1></center>
           <Table striped bordered hover>
       <thead>
         <tr>
@@ -70,7 +70,7 @@ const MyCart=()=>{
           <th> Price</th>
           <th> Quantity</th>
           <th> Total </th>
-          <td> </td>
+          <td>Remove</td>
         </tr>
       </thead>
       <tbody>
@@ -78,15 +78,15 @@ const MyCart=()=>{
 
          <tr>
           <th></th>
-          <th> </th>
+          <th></th>
           <th></th>
           <th></th>
           <th>  </th>
           <th> </th>
           <th></th>
           <th width="200" style={{color:"green", fontSize:"20px"}}> Grand Total:  </th>
-          <th style={{color:"green", fontSize:"20px"}}> {grandTotal} </th>
-          <td> </td>
+          <th style={{color:"green", fontSize:"20px"}}>₹{grandTotal} </th>
+          <td><button style={{backgroundColor:"green",width:"90px",padding:"5px",borderRadius:"10px"}}>₹ Pay</button></td>
         </tr>
       </tbody>
         </Table>

@@ -2,7 +2,7 @@
     "products":[{
         "id":1,
         "name":"Smart Cctv",
-        "category":"",
+        "category":"Only day vision",
         "brand":"Hikvision",
         "price":3200,
         "description":"HIKVISION (1080P) Indoor Night Vision Dome Wired Camera 1Pcs",
@@ -11,7 +11,7 @@
     {
         "id":2,
         "name":"IMOU 360°",
-        "category":"",
+        "category":"Only night vision",
         "brand":"IMOU",
         "price":2199,
         "description":"1080P Full HD Security Camera, Human Detection",
@@ -20,7 +20,7 @@
     {
         "id":3,
         "name":"QUBO Smart",
-        "category":"",
+        "category":"Only night vision",
         "brand":"Qubo",
         "price":1590,
         "description":" Way Talk Night Vision Cloud & SD Card Recording",
@@ -29,7 +29,7 @@
     {
         "id":4,
         "name":"Eyetech 360 ",
-        "category":"",
+        "category":"Day and night vision",
         "brand":"Eyetech",
         "price":1299,
         "description":"Wireless IP WiFi Camera, Bulb Camera 360 1080p",
@@ -38,7 +38,7 @@
     {
         "id":5,
         "name":"CP PLUS",
-        "category":"",
+        "category":"Day and night vision",
         "brand":"CP",
         "price":1499,
         "description":"360° Full HD Home Security Color Night Vision",
@@ -47,8 +47,8 @@
     {
         "id":6,
         "name":"EYETECH 360",
-        "category":"",
-        "brand":"EYETECH",
+        "category":"Day and night vision",
+        "brand":"Eyetech",
         "price":1799,
         "description":"Smart Motion Detection | Outdoor Camera",
         "image":"https://m.media-amazon.com/images/I/417V3by6a5L._SX569_.jpg"
@@ -56,7 +56,7 @@
     {
         "id":7,
         "name":"Dual Lens",
-        "category":"",
+        "category":"Day and night vision",
         "brand":"PKST ",
         "price":2999,
         "description":"Motion Detection 110-240V Rotatable IP66 Surveillance Camera for Outdoor",
@@ -65,7 +65,7 @@
     {
         "id":8,
         "name":"Grousale 3",
-        "category":"",
+        "category":"Day and night vision",
         "brand":"Grousale",
         "price":1199,
         "description":"Camera with Color Night Vision, 360°",
@@ -74,7 +74,7 @@
     {
         "id":9,
         "name":"Eyetech HD",
-        "category":"",
+        "category":"Day and night vision",
         "brand":"Eyetech",
         "price":1999,
         "description":"Motion Detection/Best Light Vision/Waterproof",
@@ -83,7 +83,7 @@
     {
         "id":10,
         "name":"QIWA FHD",
-        "category":"",
+        "category":"wire less",
         "brand":"QIWA",
         "price":1258,
         "description":"080P WiFi Security Camera | Night Vision",
@@ -92,7 +92,7 @@
     {
         "id":11,
         "name":"DDLC HD",
-        "category":"",
+        "category":"wire less",
         "brand":"DDLC",
         "price":1536,
         "description":"Wi-Fi Wireless Security Camera 1080p ",
@@ -101,7 +101,7 @@
     {
         "id":12,
         "name":" V380",
-        "category":"",
+        "category":"wire less",
         "brand":"DDLC",
         "price":1399,
         "description":"WiFi CCTV Security Camera for Home",

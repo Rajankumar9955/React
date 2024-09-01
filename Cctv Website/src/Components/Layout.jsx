@@ -51,10 +51,10 @@ const mycart=()=>{
           >
             <Nav.Link as={Link} to="home">Home</Nav.Link>
             <Nav.Link href="#action2">Link</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
+            <NavDropdown title="Brand" id="navbarScrollingDropdown">
+              <NavDropdown.Item as={Link} to="eyetech">EyeTech Camera</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="daynight">
+                Day and Night camera
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">
