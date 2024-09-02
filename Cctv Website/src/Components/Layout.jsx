@@ -2,7 +2,7 @@
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
-
+import { CiLogout } from "react-icons/ci";
 
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -25,7 +25,40 @@ import {
 } from 'mdb-react-ui-kit';
 import { useSelector } from "react-redux";
 
+
+import { message } from "antd";
+import { useEffect, useState } from "react";
+
+
+
+
+
 const Layout=()=>{
+
+
+  const [usrname,setUname]=useState("");
+  const mynav=useNavigate();
+  useEffect(()=>{
+      const name=localStorage.getItem("uname");
+      setUname(name);
+      if(!name)
+      {
+          mynav("/");
+      }
+  },[])
+
+
+  const logout=()=>{
+      localStorage.clear();
+      mynav("/");
+      message.error("you are successfully loged-out");
+  }
+
+  useEffect(()=>{
+    usrname;
+  },[])
+
+
   const MyData=useSelector((state)=>state.addCart.cart);
   console.log(MyData);
   const DataCount=MyData.length;
@@ -35,14 +68,20 @@ const myNav=useNavigate();
 const mycart=()=>{
   myNav("/mycart")
 }
-      
+    
+
+const Mynav=useNavigate();
+const user=()=>{
+  Mynav("/lrpage")
+}
+
     return (
         <>
         <div id="topmenu">
         <Navbar expand="lg" className="bg-body-tertiary" style={{}}>
       <Container fluid>
         <Navbar.Brand href="#" style={{marginLeft:"20px"}}>CCTV BAZAR</Navbar.Brand>
-        <Navbar.Toggle  aria-controls="navbarScroll" style={{color:"white",backgroundColor:"black"}} />
+        <Navbar.Toggle  aria-controls="navbarScroll"  />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
@@ -50,16 +89,14 @@ const mycart=()=>{
             navbarScroll
           >
             <Nav.Link as={Link} to="home">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
+            <Nav.Link as={Link}to="products">Products</Nav.Link>
             <NavDropdown title="Brand" id="navbarScrollingDropdown">
               <NavDropdown.Item as={Link} to="eyetech">EyeTech Camera</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="daynight">
                 Day and Night camera
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
+             
             </NavDropdown>
             <Nav.Link href="#" disabled>
               Link
@@ -74,8 +111,13 @@ const mycart=()=>{
             />
             <Button variant="outline-success" style={{marginRight:"20px"}}>Search</Button>
           </Form>
-          <button style={{border:"none",marginRight:"10px"}}  >< FaUser style={{fontSize:"24px",height:"50px"}}/></button> 
-          <button style={{border:"none",marginRight:"80px"}}  onClick={mycart}><FaShoppingCart  style={{fontSize:"24px",height:"50px"}}   /><sup style={{fontSize:"20px"}}>{DataCount}</sup></button> 
+          <button style={{border:"none",marginRight:"10px"}}  >< FaUser style={{fontSize:"24px",height:"50px"}} onClick={user}/></button> 
+          <button style={{border:"none",marginRight:"10px"}}  onClick={mycart}><FaShoppingCart  style={{fontSize:"24px",height:"50px"}}   /><sup style={{fontSize:"20px"}}>{DataCount}</sup></button>
+             <div style={{height:"50px"}}>
+             <p style={{marginBottom:"-8px",marginTop:"5px"}}>Welcome:</p>
+            <p style={{width:"100px",fontSize:"15px",marginBottom:"15px",color:"green"}}>{usrname}</p>
+            </div>
+            <button onClick={logout} style={{borderRadius:"30%",width:"35px",backgroundColor:"yellow"}}><CiLogout /></button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

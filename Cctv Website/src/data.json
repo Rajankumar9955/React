@@ -1,0 +1,18 @@
+{
+  "Registration": [
+    {
+      "id": "1",
+      "name": "Rajan",
+      "contact": "9955236973",
+      "email": "krajan92946@gmail.com",
+      "password": "Raj12345"
+    },
+    {
+      "id": "bb3d",
+      "name": "Suraj kumar",
+      "contact": "6206546029",
+      "email": "suraj@gmail.com",
+      "password": "suraj1234"
+    }
+  ]
+}

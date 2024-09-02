@@ -6,6 +6,9 @@ import Mycart from "./Mycart";
 import Eyetech from "./Components/Eyetech";
 import Daynight from "./Components/Daynight";
 import Details from "./Components/Details";
+import Products from "./Components/Products";
+import LRpage from "./Components/LRpage";
+
 
 
 const App=()=>{
@@ -20,6 +23,9 @@ const App=()=>{
                  <Route path="eyetech" element={<Eyetech/>}/>
                  <Route path="daynight" element={<Daynight/>}/>
                  <Route path="details/:id" element={<Details/>}/>
+                 <Route path="products" element={<Products/>}/>
+                 <Route path="lrpage" element={<LRpage/>}/>
+               
                 
             </Route>
            </Routes>

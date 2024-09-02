@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addcartData } from './addtocartSlice';
+import { useNavigate } from 'react-router-dom';
 
 
 const Daynight=()=>{
@@ -31,7 +32,10 @@ const addDataToCart=(id, name, cate, brand, price, desc, image)=>{
 
 
 
-
+const mynav=useNavigate();
+const detail=(id)=>{
+   mynav(`/details/${id}`)
+}
 
 
 
@@ -39,7 +43,7 @@ const ans=mydata.map((key)=>{
    return(
     <>
      <Card style={{ width: '300px', marginTop:"20px",marginLeft:"20px" }}>
-      <Card.Img variant="top" src={key.image} />
+      <Card.Img variant="top" src={key.image} onClick={()=>{detail(key.id)}} id='imgpro' />
       <Card.Body>
         <Card.Title> {key.name} </Card.Title>
         <h4  style={{color:"blue", fontSize:"14px"}}>  Brand : { key.brand} 

@@ -106,6 +106,42 @@
         "price":1399,
         "description":"WiFi CCTV Security Camera for Home",
         "image":"https://m.media-amazon.com/images/I/61oTfD6wHdL._SX569_.jpg"
+    },
+    {
+        "id":13,
+        "name":"Wipro Smart Wireless Security CCTV Camera",
+        "category":"wire less",
+        "brand":"Wipro",
+        "price":2375,
+        "description":"Security CCTV Camera | 3 MP 1296p Full HD |AI Powered Motion Detection | Infrared Night Vision | 360° Panorama |Two-Way Communication| Alexa, Google Assistant & App Control, White",
+        "image":"https://m.media-amazon.com/images/I/51Azjk-+66L._SX569_.jpg"
+    },
+    {
+        "id":14,
+        "name":"Vimtag 8310",
+        "category":"Day and night vision",
+        "brand":"Vimtag",
+        "price":4999,
+        "description":"CCTV Camera for Home Outdoor Indoor with WiFi Color Night Vision 2.5K Security Camera Baby Camera Smart Motion Alert 2-Way Audio Cloud Storage/SD Card (Upto 512GB) Support, White",
+        "image":"https://m.media-amazon.com/images/I/31xAIqZr+4L._SY300_SX300_.jpg"
+    },
+    {
+        "id":15,
+        "name":"wipro Smart Wi-Fi Video Doorbell ",
+        "category":"Day and night vision",
+        "brand":"Wipro",
+        "price":5450,
+        "description":"2 MP 1080p Full HD Camera with Night Vision | Two-Way Communication | AI Motion Detection | Indoor Chime with 50 Tunes | Rain & Dust Proof | Black",
+        "image":"https://m.media-amazon.com/images/I/61MSy1IemHL._SX679_.jpg"
+    },
+    {
+        "id":16,
+        "name":"L&G Video Doorbell",
+        "category":"Wireless Video Door Bell",
+        "brand":"L&G",
+        "price":14999,
+        "description":"Wireless Video Door Bell, Alexa & Google Compatible, Free Chime (50 Ringtones) | Motion Detection Alerts | Full Hd 1080P Camera | Indoor Usage",
+        "image":"https://m.media-amazon.com/images/I/311wOOQ+0RL._SY300_SX300_.jpg"
     }
 ]
 }

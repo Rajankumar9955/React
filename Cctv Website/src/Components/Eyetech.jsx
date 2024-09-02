@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addcartData } from './addtocartSlice';
+import { useNavigate } from 'react-router-dom';
 
 
 const Eyetech=()=>{
@@ -30,7 +31,10 @@ const addDataToCart=(id, name, cate, brand, price, desc, image)=>{
 
 
 
-
+const mynav=useNavigate();
+const detail=(id)=>{
+    mynav(`/details/${id}`)
+}
 
 
 
@@ -39,20 +43,24 @@ const ans=mydata.map((key)=>{
    return(
     <>
      <Card style={{ width: '300px', marginTop:"20px",marginLeft:"20px" }}>
-      <Card.Img variant="top" src={key.image} />
+      <Card.Img variant="top" src={key.image} onClick={()=>{detail(key.id)}} id='imgpro'/>
       <Card.Body>
-        <Card.Title> {key.name} </Card.Title>
-        <h4  style={{color:"blue", fontSize:"14px"}}>  Brand : { key.brand} 
+        <Card.Title> 
+         <h4 style={{fontsize:"18px"}}>{key.name}</h4>
+         
+          </Card.Title>
+        <h4  style={{color:"teal", fontSize:"20px"}}>  Brand : { key.brand} 
 
          {" "}   
          <br />
          {""}
-         {key.category}
-        </h4>
+         </h4>
+         <h4 style={{fontSize:"18px",color:"sandybrown"}}>Category:{key.category}</h4>
+       
         <Card.Text>
-           {key.description}
+          <h1 style={{fontSize:"20px"}}>{key.description}</h1> 
         </Card.Text>
-         <h4 style={{color:"red", fontSize:"16px"}}> Price : ₹{key.price} </h4> 
+         <h4 style={{color:"green", fontSize:"21px"}}> Price : ₹{key.price} </h4>
         <Button variant="primary" 
         onClick={()=>{addDataToCart(key.id, key.name, key.category, key.brand, key.price, key.description, key.image)}}>Add To Cart</Button>
       </Card.Body>

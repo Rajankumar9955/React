@@ -4,6 +4,7 @@ import { Button } from "react-bootstrap";
 import { FaPlusCircle } from "react-icons/fa";
 import { FaMinusCircle } from "react-icons/fa";
 import { qntyInc, qntyDec, dataDel } from "./Components/addtocartSlice";
+import { useNavigate } from "react-router-dom";
 const MyCart=()=>{
     const Data= useSelector((state)=>state.addCart.cart);
    console.log(Data);
@@ -21,6 +22,12 @@ const MyCart=()=>{
    }
 
 
+const myNav=useNavigate();
+const detail=(id)=>{
+   myNav(`/details/${id}`)
+}
+
+
   let sno=0;
   let grandTotal=0;
     const ans= Data.map((key)=>{
@@ -30,7 +37,7 @@ const MyCart=()=>{
             <>
               <tr>
                 <td> {sno} </td>
-                <td> <img src={key.image} wudth="100" height="100" /> </td>
+                <td> <img src={key.image} wudth="100" height="100" onClick={()=>{detail(key.id)}} id="imgpro"/> </td>
                 <td>{key.name} </td>
                 <td>{key.brand} </td>
                 <td>{key.category}</td>
@@ -62,7 +69,7 @@ const MyCart=()=>{
       <thead>
         <tr>
           <th>S.No</th>
-          <th>Images</th>
+          <th >Images</th>
           <th>Product Name</th>
           <th>Brand</th>
           <th> Category </th>
