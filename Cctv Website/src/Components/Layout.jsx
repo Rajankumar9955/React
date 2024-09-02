@@ -75,6 +75,11 @@ const user=()=>{
   Mynav("/lrpage")
 }
 
+const [searchData,setSearchData]=useState("")
+const handleSearch=()=>{
+  Mynav(`searchproduct/${searchData}`)
+}
+
     return (
         <>
         <div id="topmenu">
@@ -108,16 +113,19 @@ const user=()=>{
               placeholder="Search"
               className="me-2"
               aria-label="Search"
-            />
-            <Button variant="outline-success" style={{marginRight:"20px"}}>Search</Button>
+              onChange={(e)=>{setSearchData(e.target.value)}}/>
+            <Button variant="outline-success" style={{marginRight:"20px"}} onClick={handleSearch}>Search</Button>
           </Form>
           <button style={{border:"none",marginRight:"10px"}}  >< FaUser style={{fontSize:"24px",height:"50px"}} onClick={user}/></button> 
           <button style={{border:"none",marginRight:"10px"}}  onClick={mycart}><FaShoppingCart  style={{fontSize:"24px",height:"50px"}}   /><sup style={{fontSize:"20px"}}>{DataCount}</sup></button>
              <div style={{height:"50px"}}>
-             <p style={{marginBottom:"-8px",marginTop:"5px"}}>Welcome:</p>
-            <p style={{width:"100px",fontSize:"15px",marginBottom:"15px",color:"green"}}>{usrname}</p>
+             <p style={{marginBottom:"-8px",marginTop:"5px",color:"green",fontSize:"18px",marginLeft:"5px"}}>Welcome:</p>
+            
+             <NavDropdown title={usrname} id="navbarScrollingDropdown">
+              <NavDropdown.Item ><button onClick={logout}>Log-out</button></NavDropdown.Item>
+              <NavDropdown.Divider />
+           </NavDropdown>
             </div>
-            <button onClick={logout} style={{borderRadius:"30%",width:"35px",backgroundColor:"yellow"}}><CiLogout /></button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

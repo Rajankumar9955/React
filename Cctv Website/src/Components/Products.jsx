@@ -2,7 +2,6 @@
 
 
 import { useEffect, useState } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import axios from 'axios';

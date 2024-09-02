@@ -8,6 +8,7 @@ import Daynight from "./Components/Daynight";
 import Details from "./Components/Details";
 import Products from "./Components/Products";
 import LRpage from "./Components/LRpage";
+import SearchProducts from "./Components/SearchProducts";
 
 
 
@@ -25,6 +26,7 @@ const App=()=>{
                  <Route path="details/:id" element={<Details/>}/>
                  <Route path="products" element={<Products/>}/>
                  <Route path="lrpage" element={<LRpage/>}/>
+                 <Route path="searchproduct/:txtdata" element={<SearchProducts/>}/>
                
                 
             </Route>
