@@ -42,7 +42,7 @@ const detail=(id)=>{
                 <td>{key.brand} </td>
                 <td>{key.category}</td>
                 <td style={{fontSize:"12px", width:"300px"}}>{key.description} </td>
-                <td>₹{key.price} </td>
+                <td>₹{key.price}.00 </td>
                 <th>
                 <FaMinusCircle onClick={()=>{decQnty(key.id)}}  style={{cursor:"pointer"}}/> 
                  <span style={{marginLeft:"5px", marginRight:"5px"}}> 
@@ -51,7 +51,7 @@ const detail=(id)=>{
                 <FaPlusCircle onClick={()=>{incQnty(key.id)}}  style={{cursor:"pointer"}}/>
                  </th>
                 <th> 
-                   ₹{key.price*key.qnty}
+                   ₹{key.price*key.qnty}.00
                     </th>
                 <td>
                  <Button var="secondary" onClick={()=>{dataDelete(key.id)}} > Remove</Button>    
@@ -92,7 +92,7 @@ const detail=(id)=>{
           <th> </th>
           <th></th>
           <th width="200" style={{color:"green", fontSize:"20px"}}> Grand Total:  </th>
-          <th style={{color:"green", fontSize:"20px"}}>₹{grandTotal} </th>
+          <th style={{color:"green", fontSize:"20px"}}>₹{grandTotal}.00 </th>
           <td><button style={{backgroundColor:"green",width:"90px",padding:"5px",borderRadius:"10px"}}>₹ Pay</button></td>
         </tr>
       </tbody>

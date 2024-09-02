@@ -28,7 +28,7 @@ useEffect(()=>{
 
 const Mynav=useNavigate();
  const details=(id)=>{
-    Mynav(`/details/${id}`)
+    Mynav(`/details/${id}`)  //productdetails
  }
 
 const addDataToCart=(id,  name, cate, brand,  price, desc,  image)=>{
@@ -38,8 +38,8 @@ const addDataToCart=(id,  name, cate, brand,  price, desc,  image)=>{
 const ans=mydata.map((key)=>{
      return(
         <>
-        <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={key.image} onClick={()=>{details(key.id)}} id='imgpro'/>
+        <Card style={{ width: '18rem' }} id='card'>
+      <Card.Img variant="top" src={key.image} onClick={()=>{details(key.id)}} />
       <Card.Body>
         <Card.Title>{key.brand} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {key.name}</Card.Title>
         <h5 style={{color:"teal"}}>{key.description}</h5> 

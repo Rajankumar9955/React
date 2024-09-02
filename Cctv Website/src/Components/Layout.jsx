@@ -119,10 +119,10 @@ const handleSearch=()=>{
           <button style={{border:"none",marginRight:"10px"}}  >< FaUser style={{fontSize:"24px",height:"50px"}} onClick={user}/></button> 
           <button style={{border:"none",marginRight:"10px"}}  onClick={mycart}><FaShoppingCart  style={{fontSize:"24px",height:"50px"}}   /><sup style={{fontSize:"20px"}}>{DataCount}</sup></button>
              <div style={{height:"50px"}}>
-             <p style={{marginBottom:"-8px",marginTop:"5px",color:"green",fontSize:"18px",marginLeft:"5px"}}>Welcome:</p>
+             <p style={{marginBottom:"-8px",marginTop:"5px",color:"green",fontSize:"18px",marginLeft:"5px"}}>Welcome</p>
             
              <NavDropdown title={usrname} id="navbarScrollingDropdown">
-              <NavDropdown.Item ><button onClick={logout}>Log-out</button></NavDropdown.Item>
+              <NavDropdown.Item ><button onClick={logout} id="logout">Log-out</button></NavDropdown.Item>
               <NavDropdown.Divider />
            </NavDropdown>
             </div>
@@ -139,11 +139,11 @@ const handleSearch=()=>{
        <MDBFooter className='text-center' color='white' bgColor='dark'>
       <MDBContainer className='p-4'>
         <section className='mb-4'>
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+          <MDBBtn outline color="light" floating className='m-1' href='https://www.facebook.com/profile.php?id=100037204516179' role='button'>
             <MDBIcon fab icon='facebook-f' />
           </MDBBtn>
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+          <MDBBtn outline color="light" floating className='m-1' href='https://x.com/Raj_Malhotra4u' role='button'>
             <MDBIcon fab icon='twitter' />
           </MDBBtn>
 
@@ -151,15 +151,15 @@ const handleSearch=()=>{
             <MDBIcon fab icon='google' />
           </MDBBtn>
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+          <MDBBtn outline color="light" floating className='m-1' href='https://www.instagram.com/mr_malhotraaa/' role='button'>
             <MDBIcon fab icon='instagram' />
           </MDBBtn>
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+          <MDBBtn outline color="light" floating className='m-1' href='https://www.linkedin.com/in/rajan-kumar-741aa722a/' role='button'>
             <MDBIcon fab icon='linkedin-in' />
           </MDBBtn>
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+          <MDBBtn outline color="light" floating className='m-1' href='https://github.com/rajankumar9955' role='button'>
             <MDBIcon fab icon='github' />
           </MDBBtn>
         </section>

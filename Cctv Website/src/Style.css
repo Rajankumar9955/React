@@ -41,9 +41,25 @@
     margin-bottom: 10px;
     
 }
-#imgpro
+#card img
 {
     cursor: pointer;
+    
+}
+#card{
+    width: 320px;
+    transition: .8s;
+}
+#card img{
+    transition: .8s;
+}
+#card img:hover{
+    transform: scale(.9);
+    transition: .8s;
+}
+#card:hover{
+    transform: scale(1.01);
+    transition: .8s;
 }
 #desc
 {
@@ -62,4 +78,13 @@
     margin-top: 30px;
     border:"2px solid black";
     margin:20px
+}
+#logout{
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: bisque;
+}
+#logout:hover
+{
+    background-color: yellow;
 }

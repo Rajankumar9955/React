@@ -5,10 +5,12 @@ import Home from "./Components/Home";
 import Mycart from "./Mycart";
 import Eyetech from "./Components/Eyetech";
 import Daynight from "./Components/Daynight";
-import Details from "./Components/Details";
 import Products from "./Components/Products";
 import LRpage from "./Components/LRpage";
 import SearchProducts from "./Components/SearchProducts";
+import Details from "./Components/Details";
+
+
 
 
 

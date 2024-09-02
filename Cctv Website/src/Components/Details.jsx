@@ -39,10 +39,10 @@ const ans=mydata.map((key)=>{
         <img src={key.image} alt=""width="500px" id='img2'/>
       </div>
       <div id='desc'>
-      <h2>{key.name}</h2>
+      <h2 style={{width:"260px"}}>{key.name}</h2>
         <p style={{width:"250px"}}>{key.description}</p>
         <h3>Brand:{key.brand}</h3>
-        <h2>₹{key.price}</h2>
+        <h2 style={{color:"green"}}>₹{key.price}.00</h2>
       
         <Button variant="primary" onClick={()=>{addDataToCart(key.id, key.name,key.category, key.brand, key.price, key.description, key.image)}}>ADD to Card</Button>
         </div>

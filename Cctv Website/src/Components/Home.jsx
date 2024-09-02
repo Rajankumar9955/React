@@ -38,13 +38,13 @@ const addDataToCart=(id,  name, cate, brand,  price, desc,  image)=>{
 const ans=mydata.map((key)=>{
      return(
         <>
-        <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={key.image} onClick={()=>{details(key.id)}} id='imgpro'/>
+        <Card style={{ width: '18rem' }} id='card'>
+      <Card.Img variant="top" src={key.image} onClick={()=>{details(key.id)}} />
       <Card.Body>
         <Card.Title>{key.brand} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {key.name}</Card.Title>
         <h5 style={{color:"teal"}}>{key.description}</h5> 
         <Card.Text>
-        <h3 style={{color:"green"}}>₹{key.price}</h3>
+        <h3 style={{color:"green"}}>₹{key.price}.00</h3>
         </Card.Text>
       
         <Button variant="primary" onClick={()=>{addDataToCart(key.id, key.name,key.category, key.brand, key.price, key.description, key.image)}}>ADD to Card</Button>

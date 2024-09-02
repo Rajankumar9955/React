@@ -5,7 +5,7 @@
         "category":"Only day vision",
         "brand":"Hikvision",
         "price":3200,
-        "description":"HIKVISION (1080P) Indoor Night Vision Dome Wired Camera 1Pcs",
+        "description":"4MP Outdoor Pan/Tilt Wi-Fi Camera | Smart Night Vision | 360° Coverage | Auto-Tracking | AI Human Detection | Weatherproof Design",
         "image":"https://m.media-amazon.com/images/I/41gQatReztL._SY300_SX300_QL70_FMwebp_.jpg"
     },
     {
@@ -14,7 +14,7 @@
         "category":"Only night vision",
         "brand":"IMOU",
         "price":2199,
-        "description":"1080P Full HD Security Camera, Human Detection",
+        "description":"1080P Full HD Security Camera, Human Detection, Motion Tracking, 2-Way Audio, Night Vision, Dome Camera with WiFi & Ethernet Connection",
         "image":"https://m.media-amazon.com/images/I/41J7VaBmGQL._SX569_.jpg"
     },
     {
@@ -23,7 +23,7 @@
         "category":"Only night vision",
         "brand":"Qubo",
         "price":1590,
-        "description":" Way Talk Night Vision Cloud & SD Card Recording",
+        "description":"360 3MP 1296p WiFi CCTV Security Camera from Hero Group | Mobile App | Two Way Talk | Night Vision | Cloud & SD Card Recording | Made in India",
         "image":"https://m.media-amazon.com/images/I/4189ssgrMFL._SX569_.jpg"
     },
     {
@@ -32,7 +32,7 @@
         "category":"Day and night vision",
         "brand":"Eyetech",
         "price":1299,
-        "description":"Wireless IP WiFi Camera, Bulb Camera 360 1080p",
+        "description":"EYETECH 360 V380 Pro Outdoor | IP66 Waterproof | Colour Night Vision | LED Lights & Alarm | Smart Motion Detection | Outdoor Camera,",
         "image":"https://m.media-amazon.com/images/I/512A0ubnpWL._SX569_.jpg"
     },
     {
@@ -41,7 +41,7 @@
         "category":"Day and night vision",
         "brand":"CP",
         "price":1499,
-        "description":"360° Full HD Home Security Color Night Vision",
+        "description":" Full HD Smart Wi-fi CCTV Camera | 360° Pan & Tilt | View & Talk | Motion Alert | Night Vision | SD Card (Up to 128 GB) | Alexa & OK Google ",
         "image":"https://m.media-amazon.com/images/I/31Lo31c7kwL._SX300_SY300_QL70_FMwebp_.jpg"
     },
     {
@@ -50,7 +50,7 @@
         "category":"Day and night vision",
         "brand":"Eyetech",
         "price":1799,
-        "description":"Smart Motion Detection | Outdoor Camera",
+        "description":"Full HD1080P Wi-Fi IP66 PTZ v380 PRO Camera Pan & Tilt Surveillance Camera, Two Way Audio/Motion Detection",
         "image":"https://m.media-amazon.com/images/I/417V3by6a5L._SX569_.jpg"
     },
     {
@@ -59,7 +59,7 @@
         "category":"Day and night vision",
         "brand":"PKST ",
         "price":2999,
-        "description":"Motion Detection 110-240V Rotatable IP66 Surveillance Camera for Outdoor",
+        "description":"Dual Lens WiFi IP 360° Camera 1920 X 2160 Full HD 3mp AI (Upgraded) CCTV Night Vision Motion Sensor Two-Way Audio Micro SD Card",
         "image":"https://m.media-amazon.com/images/I/61v1JC+HmUL._SX569_.jpg"
     },
     {
@@ -68,7 +68,7 @@
         "category":"Day and night vision",
         "brand":"Grousale",
         "price":1199,
-        "description":"Camera with Color Night Vision, 360°",
+        "description":"FHD WiFi Indoor Mini Fox Ptz Security Camera with Color Night Vision, 360° Ptz Rotation, Motion Tracking, Two Way Audio and Multi Users View",
         "image":"https://m.media-amazon.com/images/I/41CNGCLtNLL._SX569_.jpg"
     },
     {
@@ -77,7 +77,7 @@
         "category":"Day and night vision",
         "brand":"Eyetech",
         "price":1999,
-        "description":"Motion Detection/Best Light Vision/Waterproof",
+        "description":"Light Bulb Wireless IP WiFi Camera, Bulb Camera 360 1080p WiFi Auto Rotation Fish Eye 360 Degree Panoramic Mini Lamp IR CCTV 1080p",
         "image":"https://m.media-amazon.com/images/I/41zmZ36HTcL._SX569_.jpg"
     },
     {
@@ -86,7 +86,7 @@
         "category":"wire less",
         "brand":"QIWA",
         "price":1258,
-        "description":"080P WiFi Security Camera | Night Vision",
+        "description":"CCTV Camera for Home Outdoor, 360° Security WiFi Camera, 1080p Color Night Vision 30M, Human Detection, Smart Tracking, Compatible with Alexa, Ip66 Waterproof",
         "image":"https://m.media-amazon.com/images/I/41SOlmi17aL.jpg"
     },
     {
@@ -95,7 +95,7 @@
         "category":"wire less",
         "brand":"DDLC",
         "price":1536,
-        "description":"Wi-Fi Wireless Security Camera 1080p ",
+        "description":"4MP+4MP Live View Outdoor Wireless Dome Cameras with Dual-Lens Dual-Screen,360� Color Vision, Motion Detection,2-Way Talk (1103 PTZ)",
         "image":"https://m.media-amazon.com/images/I/61TW9nWXlWL._SX569_.jpg"
     },
     {
@@ -104,7 +104,7 @@
         "category":"wire less",
         "brand":"DDLC",
         "price":1399,
-        "description":"WiFi CCTV Security Camera for Home",
+        "description":"FHD WiFi Indoor Mini Fox Ptz Security Camera with Color Night Vision, 360° Ptz Rotation, Motion Tracking, Two Way Audio and Multi Users View",
         "image":"https://m.media-amazon.com/images/I/61oTfD6wHdL._SX569_.jpg"
     },
     {
@@ -127,7 +127,7 @@
     },
     {
         "id":15,
-        "name":"wipro Smart Wi-Fi Video Doorbell ",
+        "name":"Wipro Smart Wi-Fi Video Doorbell ",
         "category":"Day and night vision",
         "brand":"Wipro",
         "price":5450,

@@ -5,7 +5,7 @@ import axios from 'axios';
 
 import { useDispatch } from 'react-redux';
 import { addcartData } from './addtocartSlice';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import sppinergif from "./image/spinnergif.gif"
 
 
@@ -44,18 +44,18 @@ const SearchProducts=()=>{
              {
                 return(
                     <>
-                        <Card style={{ width: '250px', marginTop:"20px" }}>
+                        <Card style={{ width: '250px', marginTop:"20px" }} id='card'>
                         <Card.Img variant="top" src={key.image} />
                         <Card.Body>
                           <Card.Title> {key.name} </Card.Title>
-                          <h4  style={{color:"blue", fontSize:"14px"}}>  Brand : { key.brand} 
+                          <h4  style={{color:"blue", fontSize:"18px"}}>  Brand : { key.brand} 
                   
                            {" "}  For - {key.category}
                           </h4>
                           <Card.Text>
                              {key.description}
                           </Card.Text>
-                           <h4 style={{color:"red", fontSize:"16px"}}> Price : {key.price} </h4> 
+                           <h4 style={{color:"green", fontSize:"20px"}}> Price : ₹{key.price} </h4> 
                           <Button variant="primary" 
                           onClick={()=>{addDataToCart(key.id, key.name, key.category, key.brand, key.price, key.description, key.image)}}>Add To Cart</Button>
                         </Card.Body>
