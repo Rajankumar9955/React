@@ -9,6 +9,7 @@ import Products from "./Components/Products";
 import LRpage from "./Components/LRpage";
 import SearchProducts from "./Components/SearchProducts";
 import Details from "./Components/Details";
+import Shop from "./Components/Shop";
 
 
 
@@ -29,8 +30,7 @@ const App=()=>{
                  <Route path="products" element={<Products/>}/>
                  <Route path="lrpage" element={<LRpage/>}/>
                  <Route path="searchproduct/:txtdata" element={<SearchProducts/>}/>
-               
-                
+                 <Route path="shop" element={<Shop/>}/>
             </Route>
            </Routes>
        </BrowserRouter>

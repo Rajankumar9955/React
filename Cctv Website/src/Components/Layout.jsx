@@ -103,9 +103,7 @@ const handleSearch=()=>{
               <NavDropdown.Divider />
              
             </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link>
+            <Nav.Link as={Link}to="shop">Shop</Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control

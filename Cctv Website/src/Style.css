@@ -88,3 +88,16 @@
 {
     background-color: yellow;
 }
+#prdts
+{
+    display: flex;
+    justify-content: space-between;
+}
+#prod{
+    display: flex;
+    flex-wrap:wrap ;
+    margin-left: 50px;
+    gap:30px;
+    margin-top: 30px;
+    width: 1500px;
+}

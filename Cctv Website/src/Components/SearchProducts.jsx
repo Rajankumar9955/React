@@ -5,7 +5,7 @@ import axios from 'axios';
 
 import { useDispatch } from 'react-redux';
 import { addcartData } from './addtocartSlice';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import sppinergif from "./image/spinnergif.gif"
 
 
@@ -38,6 +38,12 @@ const SearchProducts=()=>{
         dispatch(addcartData({id:id, name:name, category:cate, 
          brand:brand, price:price, description:desc,image:image, qnty:1}))
    }
+
+const mynav=useNavigate();
+const details=(id)=>{
+    mynav(`/details/${id}`)
+}
+
    const ans=mydata.map((key)=>{
     const status=key.name.includes(txtdata);
              if(status)
@@ -45,7 +51,7 @@ const SearchProducts=()=>{
                 return(
                     <>
                         <Card style={{ width: '250px', marginTop:"20px" }} id='card'>
-                        <Card.Img variant="top" src={key.image} />
+                        <Card.Img variant="top" src={key.image}  onClick={()=>{details(key.id)}} />
                         <Card.Body>
                           <Card.Title> {key.name} </Card.Title>
                           <h4  style={{color:"blue", fontSize:"18px"}}>  Brand : { key.brand} 
