@@ -1,3 +1,5 @@
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useSelector, useDispatch } from "react-redux";
 import Table from 'react-bootstrap/Table';
 import { Button } from "react-bootstrap";
@@ -19,6 +21,7 @@ const MyCart=()=>{
  
    const dataDelete=(id)=>{
      dispatch(dataDel({id:id}));
+     toast.success("Item Removed");
    }
 
 
@@ -97,6 +100,7 @@ const detail=(id)=>{
         </tr>
       </tbody>
         </Table>
+        <ToastContainer />
         </>
     )
 }

@@ -1,6 +1,7 @@
 
 
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import axios from 'axios';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
@@ -51,11 +52,11 @@ const handleSubmitlogin=()=>{
             mynav("/home")
           }
           else{
-            alert("Wrong Password");
+            toast.error("Wrong Password");
           }
     }
     else{
-      alert("Wrong Email")
+      toast.error("Wrong Email")
     }
   })
 }
@@ -154,6 +155,7 @@ const handleSubmitlogin=()=>{
           </Button>
         </Modal.Footer>
       </Modal>
+      <ToastContainer />
         </>
     )
 }

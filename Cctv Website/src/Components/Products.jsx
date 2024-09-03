@@ -47,7 +47,7 @@ const ans=mydata.map((key)=>{
         <h3 style={{color:"green"}}>₹{key.price}</h3>
         </Card.Text>
       
-        <Button variant="primary" onClick={()=>{addDataToCart(key.id, key.name,key.category, key.brand, key.price, key.description, key.image)}}>ADD to Card</Button>
+        <Button variant="primary" onClick={()=>{addDataToCart(key.id, key.name,key.category, key.brand, key.price, key.description, key.image)}}>ADD TO CART</Button>
       </Card.Body>
     </Card>
         </>
