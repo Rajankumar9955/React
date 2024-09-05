@@ -13,6 +13,13 @@
       "contact": "6206546029",
       "email": "suraj@gmail.com",
       "password": "suraj1234"
+    },
+    {
+      "id": "68d1",
+      "name": "Vivek Kumar",
+      "contact": "7981994042",
+      "email": "vivek12@gmail.com",
+      "password": "vivek1234"
     }
   ]
 }

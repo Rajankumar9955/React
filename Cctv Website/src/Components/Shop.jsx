@@ -72,7 +72,7 @@ const ans=mydata.map((key)=>{
         
             
           <div style={{width:"100%",display:"flex",justifyContent:"space-around"}}>  
-            <div style={{width:"380px",marginLeft:"50px",marginTop:"150px",fontWeight:"bold",padding:"5px"}}>
+            <div style={{width:"380px",marginLeft:"50px",fontWeight:"bold",padding:"5px"}}>
          <h5 style={{fontWeight:"bold"}}>Search By Category</h5>
          <input type="radio" name='radio' value="Day and night vision" onChange={(e)=>{setCategorySearch(e.target.value)}}/> Day and Night Vision <br />
          <input type="radio" name='radio' value="Only night vision" onChange={(e)=>{setCategorySearch(e.target.value)}}/> Day Vision Only <br />
@@ -80,7 +80,8 @@ const ans=mydata.map((key)=>{
          <input type="radio" name='radio' value="Wireless Video Door Bell" onChange={(e)=>{setCategorySearch(e.target.value)}}/> Wireless Video Door Bell <br />
         <button onClick={handleCategorySubmit} style={{width:"100px",borderRadius:"10px",marginLeft:"20px",marginTop:"10px"}}>Click me</button>
         </div>   
-        
+         
+         
        
       <div id='prod'>
       {ans}

@@ -85,7 +85,7 @@ const handleSearch=()=>{
         <div id="topmenu">
         <Navbar expand="lg" className="bg-body-tertiary" style={{}}>
       <Container fluid>
-        <Navbar.Brand href="#" style={{marginLeft:"20px"}}>CCTV BAZAR</Navbar.Brand>
+        <Navbar.Brand href="#" style={{marginLeft:"20px",fontWeight:"bold"}}>CCTV BAZAR</Navbar.Brand>
         <Navbar.Toggle  aria-controls="navbarScroll"  />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -94,9 +94,12 @@ const handleSearch=()=>{
             navbarScroll
           >
             <Nav.Link as={Link} to="home">Home</Nav.Link>
+            <Nav.Link as={Link} to="about">About</Nav.Link>
             <Nav.Link as={Link}to="products">Products</Nav.Link>
-            <NavDropdown title="Brand" id="navbarScrollingDropdown">
+            <NavDropdown title="Brands" id="navbarScrollingDropdown">
               <NavDropdown.Item as={Link} to="eyetech">EyeTech Camera</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="wipro">Wipro Camera</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="ddlc">DDLC Camera</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="daynight">
                 Day and Night camera
               </NavDropdown.Item>
@@ -176,8 +179,8 @@ const handleSearch=()=>{
               </MDBCol>
 
               <MDBCol size="auto">
-                <MDBBtn outline color='light' type='submit' className='mb-4'>
-                  Subscribe
+                <MDBBtn outline color='light' type='submit' className='mb-4'   >
+                 SEND
                 </MDBBtn>
               </MDBCol>
             </MDBRow>
@@ -306,9 +309,9 @@ const handleSearch=()=>{
       </MDBContainer>
 
       <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-        © 2024 Copyright:
+        © 2024 Copyright By:
         <a className='text-white' href='https://github.com/rajankumar9955'>
-          CctvBazzar.com
+          CCTVBAZAR.COM
         </a>
       </div>
     </MDBFooter>
