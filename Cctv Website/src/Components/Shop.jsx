@@ -160,7 +160,7 @@ const handleCategorySubmit=()=>{
     axios.get(api).then((res)=>{
         setMydata(res.data);
     })
-    setCategorySearch(true);
+    setDisplayState(true);
 }
 
 
@@ -169,7 +169,7 @@ const handleSubPrice=()=>{
   axios.get(api).then((res)=>{
     setPriceMydata(res.data)
   })
-  setCategorySearch(false);
+  setDisplayState(false);
 }
 
 console.log(pricemydata);
@@ -182,15 +182,15 @@ console.log(pricemydata);
 
           <div style={{width:"100%",display:"flex",justifyContent:"space-around"}}>  
             <div style={{width:"380px",marginLeft:"50px",fontWeight:"bold",padding:"5px"}}>
-         <h5 style={{fontWeight:"bold"}}>Search By Category</h5>
+         <h5 style={{fontWeight:"bold",marginTop:"50px"}}>Search By Category</h5>
          <input type="radio" name='radio' value="Day and night vision" onChange={(e)=>{setCategorySearch(e.target.value)}}/> Day and Night Vision <br />
          <input type="radio" name='radio' value="Only night vision" onChange={(e)=>{setCategorySearch(e.target.value)}}/> Day Vision Only <br />
          <input type="radio" name='radio' value="wire less" onChange={(e)=>{setCategorySearch(e.target.value)}}/> Wire less <br />
          <input type="radio" name='radio' value="Wireless Video Door Bell" onChange={(e)=>{setCategorySearch(e.target.value)}}/> Wireless Video Door Bell <br />
-        <button size="sm" onClick={handleCategorySubmit} style={{width:"100px",borderRadius:"10px",marginLeft:"20px",marginTop:"10px"}}>Click me</button>
+         <Button size="sm" onClick={handleCategorySubmit} style={{borderRadius:"10px",marginLeft:"20px",marginTop:"10px"}}>Click me</Button>
         <br /><br />
 
-        <h5> Search By Price</h5> 
+        <h5 style={{marginTop:"5px"}}> Search By Price</h5> 
              
              <input type="radio" value="2000"  name="price"
              onChange={(e)=>{setPriceData(e.target.value)}}/> Rs 2000 & below
@@ -205,7 +205,7 @@ console.log(pricemydata);
              onChange={(e)=>{setPriceData(e.target.value)}} /> Rs 5000 & Above
              <br/>
              {""}
-             <Button size="sm" onClick={handleSubPrice}>Search</Button>
+             <Button size="sm" onClick={handleSubPrice}  style={{borderRadius:"10px",marginLeft:"20px",marginTop:"10px"}}>Search</Button>
 
 
         </div>   

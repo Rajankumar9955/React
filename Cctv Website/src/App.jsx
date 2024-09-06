@@ -13,6 +13,8 @@ import Details from "./Components/Details";
 import Shop from "./Components/Shop";
 import About from "./Components/About";
 import Ddlc from "./Components/Ddlc";
+import PremiumCamera from "./Components/PremiumCamera";
+import Sale from "./Components/Sale";
 
 
 
@@ -33,11 +35,13 @@ const App=()=>{
                  <Route path="wipro" element={<Wipro/>}/>
                  <Route path="ddlc" element={<Ddlc/>}/>
                  <Route path="daynight" element={<Daynight/>}/>
+                 <Route path="premiumcamera" element={<PremiumCamera/>}/>
                  <Route path="details/:id" element={<Details/>}/>
                  <Route path="products" element={<Products/>}/>
                  <Route path="lrpage" element={<LRpage/>}/>
                  <Route path="searchproduct/:txtdata" element={<SearchProducts/>}/>
                  <Route path="shop" element={<Shop/>}/>
+                 <Route path="sale" element={<Sale/>}/>
             </Route>
            </Routes>
        </BrowserRouter>

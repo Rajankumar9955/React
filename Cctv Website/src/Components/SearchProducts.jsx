@@ -50,7 +50,7 @@ const details=(id)=>{
              {
                 return(
                     <>
-                        <Card style={{ width: '250px', marginTop:"20px" }} id='card'>
+                        <Card style={{ width: '250px', marginTop:"20px"}} id='card' >
                         <Card.Img variant="top" src={key.image}  onClick={()=>{details(key.id)}} />
                         <Card.Body>
                           <Card.Title> {key.name} </Card.Title>

@@ -95,6 +95,9 @@ const handleSearch=()=>{
             <Nav.Link as={Link} to="home">Home</Nav.Link>
             <Nav.Link as={Link} to="about">About</Nav.Link>
             <Nav.Link as={Link}to="products">Products</Nav.Link>
+            <Nav.Link as={Link}to="shop">Shop</Nav.Link>
+            <Nav.Link as={Link}to="Blog">Blog</Nav.Link>
+            <Nav.Link as={Link}to="sale">Sale</Nav.Link>
             <NavDropdown title="Brands" id="navbarScrollingDropdown">
               <NavDropdown.Item as={Link} to="eyetech">EyeTech Camera</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="wipro">Wipro Camera</NavDropdown.Item>
@@ -103,9 +106,11 @@ const handleSearch=()=>{
                 Day and Night camera
               </NavDropdown.Item>
               <NavDropdown.Divider />
-             
+              <NavDropdown.Item as={Link}to="premiumcamera">
+                Premium Camera's
+              </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link}to="shop">Shop</Nav.Link>
+            
           </Nav>
           <Form className="d-flex">
             <Form.Control

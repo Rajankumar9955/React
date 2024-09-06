@@ -49,6 +49,7 @@
 #card{
     width: 320px;
     transition: .8s;
+  
 }
 #card img{
     transition: .8s;
