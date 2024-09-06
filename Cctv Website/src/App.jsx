@@ -15,6 +15,7 @@ import About from "./Components/About";
 import Ddlc from "./Components/Ddlc";
 import PremiumCamera from "./Components/PremiumCamera";
 import Sale from "./Components/Sale";
+import Blog from "./Components/Blog";
 
 
 
@@ -42,6 +43,8 @@ const App=()=>{
                  <Route path="searchproduct/:txtdata" element={<SearchProducts/>}/>
                  <Route path="shop" element={<Shop/>}/>
                  <Route path="sale" element={<Sale/>}/>
+                 <Route path="sale" element={<Sale/>}/>
+                 <Route path="blog" element={<Blog/>}/>
             </Route>
            </Routes>
        </BrowserRouter>
