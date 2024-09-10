@@ -16,6 +16,8 @@ import Ddlc from "./Components/Ddlc";
 import PremiumCamera from "./Components/PremiumCamera";
 import Sale from "./Components/Sale";
 import Blog from "./Components/Blog";
+import Payment from "./Components/Payment";
+import PlaceOrder from "./Components/PlacedOrder";
 
 
 
@@ -45,6 +47,8 @@ const App=()=>{
                  <Route path="sale" element={<Sale/>}/>
                  <Route path="sale" element={<Sale/>}/>
                  <Route path="blog" element={<Blog/>}/>
+                 <Route path="payment" element={<Payment/>}/>
+                 <Route path="placeorder" element={<PlaceOrder/>}/>
             </Route>
            </Routes>
        </BrowserRouter>

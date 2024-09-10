@@ -30,6 +30,11 @@ const detail=(id)=>{
    myNav(`/details/${id}`)
 }
 
+const Payment=()=>{
+  myNav('/payment')
+}
+
+
 
   let sno=0;
   let grandTotal=0;
@@ -96,7 +101,7 @@ const detail=(id)=>{
           <th></th>
           <th width="200" style={{color:"green", fontSize:"20px"}}> Grand Total:  </th>
           <th style={{color:"green", fontSize:"20px"}}>₹{grandTotal}.00 </th>
-          <td><button style={{backgroundColor:"green",width:"90px",padding:"5px",borderRadius:"10px"}}>₹ Pay</button></td>
+          <td><button style={{backgroundColor:"green",width:"90px",padding:"5px",borderRadius:"10px"}} onClick={Payment}>₹ Pay</button></td>
         </tr>
       </tbody>
         </Table>
