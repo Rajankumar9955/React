@@ -1,15 +1,18 @@
- import { useSelector,useDispatch } from "react-redux";
- import { increment,decrement } from "./MultipleSlice";
+import { useSelector,useDispatch } from "react-redux"
+import { decrement,increment } from "./MultipleSlice"
  const IncrementDecreament=()=>{
-    const count=useSelector((state)=>state.mycount.cnt);
-    const dispatch=useDispatch();
+ 
+     const count=useSelector((state)=>state.mycounter.cnt+1)
+     const dispatch=useDispatch();
+
     return(
         
         <>
+        <h1>count:{count}</h1>
+        <button onClick={()=>{dispatch(increment())}}>Increamet</button>
+        <button onClick={()=>{dispatch(decrement())}}>Decrement</button>
+
         
-        <h1 align="center"></h1>
-        <button onClick={()=>{dispatch(increment)}}>increment</button>
-        <button onClick={()=>{dispatch(decrement)}}>Decrement</button>
 
         
         </>

@@ -1,11 +1,26 @@
 import { createSlice } from "@reduxjs/toolkit";
-const MultipaleSlice=createSlice({
-    name:"mycounter",initialState:{cnt:0},
+const MultipleSlice=createSlice({
+    name:"mycounter",
+    initialState:{
+        cnt:0
+    },
     reducers:{
         increment:(state)=>{state.cnt=state.cnt+1;
         },
-        decrement:(state)=>{state.cnt=state.cnt-1}
+
+        decrement:(state)=>{
+            
+            if(state.cnt<=-1)
+            {
+                alert("no negative decrement")
+            }
+            else{
+                state.cnt=state.cnt-1
+            }
+            
+        }
+        
     }
 })
-export default MultipaleSlice.reducer;
-export const{increment,decrement}=MultipaleSlice.actions
+export default MultipleSlice.reducer;
+export const{increment,decrement}=MultipleSlice.actions;

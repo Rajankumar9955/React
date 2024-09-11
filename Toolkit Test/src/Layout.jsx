@@ -13,7 +13,7 @@ const Layout=()=>{
           <Nav className="me-auto">
             <Nav.Link as={Link} to="IncrementDecreament">IncrementDecrement</Nav.Link>
             <Nav.Link as={Link} to="todoapp">ToDoApp</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link as={Link} to="colorchange">Color Change</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
