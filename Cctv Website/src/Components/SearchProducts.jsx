@@ -8,7 +8,6 @@ import { addcartData } from './addtocartSlice';
 import { useNavigate, useParams } from 'react-router-dom';
 import sppinergif from "./image/spinnergif.gif"
 
-
 const SearchProducts=()=>{
     const {txtdata}=useParams();
     const [mydata,setMydata]=useState([]);
