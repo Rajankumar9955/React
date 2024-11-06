@@ -77,7 +77,6 @@ const ans=mydata.map((key)=>{
        <div id='eyetech' >
         {ans}        
        </div>
-
         </>
     )
 }
