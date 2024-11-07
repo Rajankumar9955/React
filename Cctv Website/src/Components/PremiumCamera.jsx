@@ -61,7 +61,6 @@ const ans=mydata.map((key)=>{
 
     return(
         <>
-     
     <div>
         <center>
             <h2 style={{marginTop:"20px"}}>Premium Camera's</h2>
