@@ -23,7 +23,6 @@ useEffect(()=>{
     loadData();
 },[])
 
-
 const Mynav=useNavigate();
  const details=(id)=>{
     Mynav(`/details/${id}`)  //productdetails
