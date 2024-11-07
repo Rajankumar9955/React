@@ -59,7 +59,6 @@ const ans=mydata.map((key)=>{
     }
 })
 
-  
     return(
         <>
      
