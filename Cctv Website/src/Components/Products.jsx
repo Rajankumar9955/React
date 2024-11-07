@@ -61,8 +61,7 @@ const ans=mydata.map((key)=>{
     </div>
     <div id='products'>
       {ans}
-      </div>
-        
+      </div> 
     </>
     )
 }
