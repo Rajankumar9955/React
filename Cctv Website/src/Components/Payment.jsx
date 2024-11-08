@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const Payment=()=>{
 
 const mynav=useNavigate();
+
 const placeorder=()=>{
     mynav("/placeorder")
 }
