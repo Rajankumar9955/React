@@ -108,7 +108,6 @@ const handleSubmitlogin=()=>{
                 type="password" name='password' onChange={handleInput}
                 autoFocus/>
             </Form.Group>
-            
           </Form>
         </Modal.Body>
         <Modal.Footer>
