@@ -47,4 +47,5 @@ const placeorder=()=>{
         </>
     )
 }
+
 export default Payment;
