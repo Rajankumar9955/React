@@ -45,7 +45,6 @@ const placeorder=()=>{
              <button style={{borderRadius:"10px"}} onClick={placeorder}>Place Order!</button>
          </div>
       </div>
-        
         </>
     )
 }
