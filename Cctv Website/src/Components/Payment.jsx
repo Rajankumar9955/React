@@ -18,8 +18,7 @@ const placeorder=()=>{
          <FloatingLabel
         controlId="floatingInput"
         label="Name"
-        className="mb-3"
-      >
+        className="mb-3">
         <Form.Control type="name" placeholder="name@example.com"  />
       </FloatingLabel>
       <FloatingLabel controlId="floatingPassword" label="Email" className='mb-3'>
