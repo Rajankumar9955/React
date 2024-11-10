@@ -57,7 +57,6 @@ const Layout=()=>{
     usrname;
   },[])
 
-
   const MyData=useSelector((state)=>state.addCart.cart);
   console.log(MyData);
   const DataCount=MyData.length;
