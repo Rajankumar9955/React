@@ -67,7 +67,6 @@ const myNav=useNavigate();
 const mycart=()=>{
   myNav("/mycart")
 }
-    
 
 const Mynav=useNavigate();
 const user=()=>{
