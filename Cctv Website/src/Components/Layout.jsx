@@ -318,7 +318,7 @@ const handleSearch=()=>{
       </div>
     </MDBFooter>
        </div>
-        </>
+      </>
     )
 }
 export default Layout;
