@@ -25,7 +25,6 @@ useEffect(()=>{
 
 
 
-
 const addDataToCart=(id,  name, cate, brand,  price, desc,  image)=>{
   dispatch(addcartData({id:id,  name:name, category:cate, brand:brand,  price:price,  description:desc,image:image, qnty:1}))
 
