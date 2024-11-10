@@ -70,7 +70,6 @@ const ans=mydata.map((key)=>{
    )
 })
 
-
  return(
         <>
        <div id="proHeading">
