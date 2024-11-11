@@ -2,10 +2,10 @@ import { useState } from "react";
 import { useSelector,useDispatch } from "react-redux";
  import { addTask,recDelete,taskComplete,taskUnComplete,editDataSave } from "./todoSlice";
  const App=()=>{
-    const [txtval,setTxtval]=useState("")
-    const [edBtn,setEdbtn]=useState(true);
-    const [edId,setEdID]=useState("");
-    const mydata=useSelector((state)=>state.todo.task);
+    const [txtval, setTxtval]=useState("")
+    const [edBtn, setEdbtn]=useState(true);
+    const [edId, setEdID]=useState("");
+    const mydata = useSelector((state)=>state.todo.task);
     const mydis=useDispatch();
 
     console.log(mydata);
