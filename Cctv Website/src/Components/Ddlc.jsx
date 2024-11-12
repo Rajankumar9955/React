@@ -38,8 +38,6 @@ const detail=(id)=>{
 }
 
 
-
-
 const ans=mydata.map((key)=>{
    return(
     <>
