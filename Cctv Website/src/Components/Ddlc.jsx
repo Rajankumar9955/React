@@ -10,7 +10,6 @@ import { useDispatch } from 'react-redux';
 import { addcartData } from './addtocartSlice';
 import { useNavigate } from 'react-router-dom';
 
-
 const Ddlc=()=>{
 const [mydata, setMydata]=useState([]);
 const dispatch= useDispatch();
