@@ -32,7 +32,6 @@ const addDataToCart=(id, name, cate, brand, price, desc, image)=>{
 }
 
 
-
 const mynav=useNavigate();
 const detail=(id)=>{
     mynav(`/details/${id}`)
