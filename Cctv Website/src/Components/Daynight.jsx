@@ -55,7 +55,6 @@ const ans=mydata.map((key)=>{
         onClick={()=>{addDataToCart(key.id, key.name, key.category, key.brand, key.price, key.description, key.image)}}>Add To Cart</Button>
       </Card.Body>
     </Card>
-    
     </>
    )
 })
