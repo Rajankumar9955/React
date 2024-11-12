@@ -33,8 +33,6 @@ const detail=(id)=>{
    mynav(`/details/${id}`)
 }
 
-
-
 const ans=mydata.map((key)=>{
    return(
     <>
