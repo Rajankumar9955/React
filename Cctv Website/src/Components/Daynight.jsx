@@ -65,6 +65,7 @@ const ans=mydata.map((key)=>{
         <center><h3 style={{marginTop:"30px"}}>Day and Night Camera's</h3></center>
        </div>
        
+       
        <div id='eyetech' >
         {ans}        
        </div>
