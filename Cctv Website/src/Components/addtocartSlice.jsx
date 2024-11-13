@@ -23,7 +23,6 @@ const addtoCart= createSlice({
             }
         },
         qntyInc:(state, action)=>{
-           
             for (var i=0; i<state.cart.length; i++)
             {
                  if(state.cart[i].id==action.payload.id)
