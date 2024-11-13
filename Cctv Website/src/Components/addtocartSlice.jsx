@@ -22,7 +22,6 @@ const addtoCart= createSlice({
                 state.cart.push(action.payload);
             }
         },
-
         qntyInc:(state, action)=>{
            
             for (var i=0; i<state.cart.length; i++)
