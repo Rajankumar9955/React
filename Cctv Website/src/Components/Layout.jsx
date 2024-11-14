@@ -29,11 +29,7 @@ import { message } from "antd";
 import { useEffect, useState } from "react";
 
 
-
-
-
 const Layout=()=>{
-
 
   const [usrname,setUname]=useState("");
   const mynav=useNavigate();
