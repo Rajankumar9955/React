@@ -75,6 +75,7 @@ const ans=mydata.map((key)=>{
         <center><h3 style={{marginTop:"30px"}}> DDLC CAMERA'S</h3></center>
        </div>
        
+       
        <div id='eyetech' >
         {ans}        
        </div>
