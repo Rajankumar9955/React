@@ -72,5 +72,4 @@ const ans=mydata.map((key)=>{
     </>
     )
 }
-
 export default PremiumCamera;
