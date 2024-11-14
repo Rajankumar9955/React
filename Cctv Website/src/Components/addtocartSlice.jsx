@@ -52,6 +52,5 @@ const addtoCart= createSlice({
         }
     }
 })
-
 export default addtoCart.reducer;
 export const {addcartData,qntyInc, qntyDec, dataDel }= addtoCart.actions;
