@@ -48,7 +48,6 @@ const ans=mydata.map((key)=>{
      )
 })
 
-
     return(
         <>
        <center><h2 style={{marginTop:"30px"}}>Product Details</h2></center> 
