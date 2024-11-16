@@ -35,7 +35,6 @@ const Payment=()=>{
 }
 
 
-
   let sno=0;
   let grandTotal=0;
     const ans= Data.map((key)=>{
