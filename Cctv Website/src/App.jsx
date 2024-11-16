@@ -21,9 +21,6 @@ import PlaceOrder from "./Components/PlacedOrder";
 
 
 
-
-
-
 const App=()=>{
   return(
     <>
