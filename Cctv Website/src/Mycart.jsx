@@ -25,6 +25,7 @@ const MyCart=()=>{
    }
 
 
+   
 const myNav=useNavigate();
 const detail=(id)=>{
    myNav(`/details/${id}`)
