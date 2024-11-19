@@ -80,7 +80,6 @@ import { useSelector,useDispatch } from "react-redux";
             </tr>
             {ans}
         </table>
-        
         </>
     )
  }
