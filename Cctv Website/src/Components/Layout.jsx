@@ -101,7 +101,7 @@ const handleSearch=()=>{
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item as={Link}to="premiumcamera">
-                Premium Camera's
+                Premium Camera's 
               </NavDropdown.Item>
             </NavDropdown>
             
