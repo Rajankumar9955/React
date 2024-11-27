@@ -16,5 +16,6 @@ const store =configureStore({
         addCart:persistedReducer
     }
 })
+
 export default store;
 export const  persistor = persistStore(store)
