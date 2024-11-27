@@ -1,6 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import myData from "./addtocartSlice";
 
+
 import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 
