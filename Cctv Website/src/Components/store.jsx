@@ -8,10 +8,11 @@ const persistConfig = {
     key: 'root',
     storage,
   }
-  const persistedReducer = persistReducer(persistConfig, myData)
+const persistedReducer = persistReducer(persistConfig, myData)
 
 const store =configureStore({
     reducer:{
+        
         addCart:persistedReducer
     }
 })
