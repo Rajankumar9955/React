@@ -1,4 +1,3 @@
-
 import { configureStore } from "@reduxjs/toolkit";
 import myData from "./addtocartSlice";
 
@@ -16,6 +15,5 @@ const store =configureStore({
         addCart:persistedReducer
     }
 })
-
 export default store;
 export const  persistor = persistStore(store)
