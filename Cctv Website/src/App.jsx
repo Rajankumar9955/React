@@ -18,6 +18,7 @@ import Sale from "./Components/Sale";
 import Blog from "./Components/Blog";
 import Payment from "./Components/Payment";
 import PlaceOrder from "./Components/PlacedOrder";
+import PurchaseDetails from "./Components/PurchaseDetails";
 
 
 
@@ -46,6 +47,7 @@ const App=()=>{
                  <Route path="blog" element={<Blog/>}/>
                  <Route path="payment" element={<Payment/>}/>
                  <Route path="placeorder" element={<PlaceOrder/>}/>
+                 <Route path="purchasedetails" element={<PurchaseDetails/>}/>
             </Route>
            </Routes>
        </BrowserRouter>

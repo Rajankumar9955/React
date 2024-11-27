@@ -7,7 +7,8 @@ const Payment=()=>{
 const mynav=useNavigate();
 
 const placeorder=()=>{
-    mynav("/placeorder")
+  
+      mynav("/placeorder")
 }
 
     return(
